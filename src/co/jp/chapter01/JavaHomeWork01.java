@@ -7,7 +7,7 @@ public class JavaHomeWork01 {
 
 		/** 01型＆式 */
 
-		//質問１︓以下変数nの値は？
+		//質問１︓以下変数nの値は?
 		int i = 10;
 		int n = i % 5;
 		System.out.println("n=" + 0);
