@@ -48,5 +48,14 @@ public class JavaHomeWork01 {
 			}
 		}
 
+		//質問６
+		int x = 10;
+		int y = 20;
+		x = y;
+		y = 30;
+		//x=20
+		System.out.println(x);
+		//y=30
+		System.out.println(y);
 	}
 }
