@@ -21,7 +21,7 @@ public class JavaHomeWork01 {
 		//質問３︓変数値を比較する演算子は = or == ?
 		System.out.println("==");
 
-		//質問４︓ブリアン（boolean）変数に設定可能の値は「?」「?」。
+		//質問４︓ブリアン（boolean）変数に設定可能の値は「?」「?」
 		System.out.println("true & false");
 
 		//質問５︓下記コードで、変数xとyの値を回答してください。
