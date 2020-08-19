@@ -9,7 +9,7 @@ public class JavaHomeWork01 {
 		
 		//質問２　今現場に使用しているIDE　（開発ツール）
 		//開発言語；
-		//DB；
+		//DB；++
 	}
 
 }
