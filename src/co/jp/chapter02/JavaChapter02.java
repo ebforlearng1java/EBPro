@@ -5,6 +5,10 @@ public class JavaChapter02 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
+		// String
+		String name = "SQM" ;
+		System.out.println(name);
+
 	}
 
 }
