@@ -11,6 +11,9 @@ public class JavaHommeWork00 {
 		// 開発言語向け
 		// DB向け
 
+		//新しいPCが来ました
+		System.out.println("新しいPCが来ました,また慣れていません");
+
 	}
 
 }
