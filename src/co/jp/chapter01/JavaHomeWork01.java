@@ -18,6 +18,10 @@ public class JavaHomeWork01 {
 
     //質問4
     System.out.println("変数ブリアンに設定可能な値はTrueとFalse");
+
+    //質問5
+    //xとyの値を出力
+    System.out.println("x=20;y=30");
 	}
 
 
