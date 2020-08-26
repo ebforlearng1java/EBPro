@@ -39,6 +39,7 @@ public class JavaHomeWork03 {
 
 
 		//質問2
+		//3340円のコイン数を求める
 		int i = 3340;
 		//500円の枚数
 		int a = i/500;
