@@ -5,13 +5,13 @@ public class JavaHomeWork01 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		// 質問１
+		// 質問集（質問１）
 		int i = 10;
 		int n = i%5;
 		//n=0
 		System.out.println(n);
 
-		//質問２
+		//質問集（質問２）
 
 		//a>10がTRUEの場合、11を出力する
 		int a = 11;
@@ -23,7 +23,7 @@ public class JavaHomeWork01 {
 		a = a > 10 ? 11 : 0;
 		System.out.println(a);
 
-		//質問３
+		//質問集（質問３）
 
 		//"＝"は変数値ｃ、ｄに１を設定する
 		int c = 1;
@@ -34,7 +34,7 @@ public class JavaHomeWork01 {
 			System.out.println("cとｄは等しいです。");
 		}
 
-		//質問４
+		//質問集（質問４）
 		//ブリアン変数に設定可能の値はtrue、falseです。
 		int e = 1;
 		int f = 2;
@@ -57,5 +57,7 @@ public class JavaHomeWork01 {
 		System.out.println(x);
 		//y=30
 		System.out.println(y);
+
+
 	}
 }
