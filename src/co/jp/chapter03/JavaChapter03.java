@@ -61,19 +61,19 @@ public class JavaChapter03 {
 			System.out.println("変数Ａは-9~9以外の数字です");
 			break;
 		}
-		
+
 		//loopの一つforループ
 		//自然数1　2　3　4　5
 		//0はＪＡＶＡの一番目座標
 		for (int j = 0; j < 10; j++) {
 			System.out.println(j);
-			
+
 		}
-		
-		
-		
-		
-		
+
+
+
+
+
 		//質問1
 		int b = 56;
 
