@@ -84,6 +84,7 @@ public class JavaChapter03 {
 
 		//質問２:日本のコインを１円、５円、１０円、１００円、５００円があります。
 		//３３４０円のコイン数をもとめください。
+		//方法１
 		int coin = 3340;
 		if (coin >= 500) {
 			System.out.println("500円" + coin/500 + "枚");
@@ -105,6 +106,29 @@ public class JavaChapter03 {
 			System.out.println("1円" + coin/1 + "枚");
 			coin = coin%1;
 		}
+
+
+		//方法２
+		int coin2 = 3340;
+
+			System.out.println("500円" + coin2/500 + "枚");
+			coin2 = coin2%500;
+
+
+			System.out.println("100円" + coin2/100 + "枚");
+			coin2 = coin2%100;
+
+			System.out.println("10円" + coin2/10 + "枚");
+			coin2 = coin2%10;
+
+
+			System.out.println("5円" + coin2/5 + "枚");
+			coin2 = coin2%5;
+
+
+			System.out.println("1円" + coin2/1 + "枚");
+			coin2 = coin2%1;
+
 
 
 
