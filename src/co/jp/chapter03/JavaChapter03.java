@@ -100,6 +100,57 @@ public class JavaChapter03 {
 		System.out.println(con2);
 
 
+		//while の使い方
+		int a = 0 ;
+//		while(a<10) {
+//			System.out.println(a);
+//			a++;
+//		}
+
+		while(true) {
+			System.out.println(a);
+			if (a>=10) {
+				break;
+			}
+			a++;
+
+		}
+
+		//do while は必ず1回実行する
+		int x = 100;
+		do {
+			System.out.println(x);
+			x++;
+		}while(x<10);
+
+
+		//brake文の使用
+		for(int i=0; i<100;i++) {
+			if(i>10) {
+				break;
+			}
+			System.out.println(i);
+		}
+
+		//continueの使い方
+		for (int i=0;i<100;i++) {
+			if(i%2==0) {
+				System.out.println(i);
+			}
+		}
+
+		//スキップの意味
+		for(int i=0; i<100; i++) {
+			if(i%2 !=0 ) {
+				continue;
+			}
+			System.out.println(i);
+		}
+
+
+
+
+
 
 
 
