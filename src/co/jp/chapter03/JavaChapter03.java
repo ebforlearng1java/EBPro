@@ -31,7 +31,7 @@ public class JavaChapter03 {
 		}
 		int a = 0;
 		//switch
-		switch(a) {
+		switch (a) {
 		case 1:
 		case 2:
 		case 3:
@@ -67,15 +67,53 @@ public class JavaChapter03 {
 		//0はＪＡＶＡの一番目座標
 		for (int j = 0; j < 10; j++) {
 			System.out.println(j);
-
+		}
+		//while
+		int k = 0;
+		while (k < 10) {
+			System.out.println("kのループ回数:" + k);
+			k++;
+		}
+		int m = 0;
+		while (m <= 10) {
+			System.out.println("mのループ回数:" + m);
+			m++;
 		}
 
+		int l = 40;
+		do {
+			System.out.println("これはi" + l);
+			l++;
+		} while (l < 30);
 
+		for (int q = 0; q <= 10; q++) {
+			if (q % 2 != 0) {
+				continue;
+			}
+			System.out.println("これはq" + q);
+		}
+int r = 10;
+		for (int w = 0; w < r; w++) {
+			for (int e = 0; e < r; e++) {
+				if (w == e || (w + e == r-1) || ((e%(5-1) == 0)&& w % (5-1) ==0)) {
+					System.out.print(w + "" + e + " ");
+				}
+				else {
+					System.out.print("  ");
+					}
+			}
 
+			System.out.println();
+		}
 
+		//		for (int t = 0; t < 49; t++) {
+		//			System.out.print(1);
+		//			if (t > 0 && (t + 1) % 7 == 0) {
+		//				System.out.println("");
+		//			}
+		//		}
 
 		//質問1
-		int b = 56;
 
 	}
 }

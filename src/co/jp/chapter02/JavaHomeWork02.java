@@ -6,7 +6,6 @@ public class JavaHomeWork02 {
 		// TODO 自動生成されたメソッド・スタブ
 
 		//質問1：System.out.println(“this is line1\tthis line2“); は何行出力しますか?
-		System.out.println("this is line1\tthis line2");
 		//一行
 
 		//質問2:Stringを比較方法は?
@@ -27,6 +26,7 @@ public class JavaHomeWork02 {
 		//3	System.out.println("a");
 		//4}
 		//出力されたデータは a になります。
+
 
 	}
 
