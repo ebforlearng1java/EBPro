@@ -10,7 +10,7 @@ public class JavaChapter02 {
 
 		// 変数宣言の方式１
 		String temp1 = "equals";
-		String temp2 = new String("equals");
+		String temp2 = "equals";
 
 		System.out.println("変数の宣言（方式１）:"+ (temp1==temp2));
 
