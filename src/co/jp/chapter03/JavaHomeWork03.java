@@ -22,7 +22,7 @@ public class JavaHomeWork03 {
 		int a = 56;
 		System.out.println("成績ランキング判断。入力値=" + a);
 
-		if (a >= 90 && a<=100) {
+		if (a >= 90 && a <= 100) {
 			//ア：上記条件がtrueの場合、下記処理を実行
 			System.out.println("A");
 		} else if (a < 90 && a >= 80) {
@@ -37,11 +37,11 @@ public class JavaHomeWork03 {
 			//エ：ア、イ、ウ条件がfalseの場合、かつ、
 			//上記条件がtrueの場合、下記処理を実行
 			System.out.println("D");
-		} else if (a < 60 && a >= 0){
+		} else if (a < 60 && a >= 0) {
 			//オ：ア、イ、ウ、エ条件がfalseの場合、かつ、
 			//上記条件がtrueの場合、下記処理を実行
 			System.out.println("E");
-		}else {
+		} else {
 			//カ：ア、イ、ウ、エ、オ条件がfalseの場合、
 			//上記以外、下記処理を実行
 			System.out.println("aの値が正しくない");
@@ -49,15 +49,26 @@ public class JavaHomeWork03 {
 
 		//質問２︓日本のコインを１円、５円、１０円、１００円、５００円があります。
 		//３３４０円のコイン数をもとめください。
-		//答え：13個。500円のコイン数は6個、100円のコイン数は3個、10円のコイン数は4個
-		int count500=3340/500;
-		int count100=3340%500/100;
-		int count10=3340%500%100/10;
-		int total=count500+count100+count10;
-		System.out.println("全てコイン数は"+total);
-		System.out.println("500円のコイン数は"+count500);
-		System.out.println("100円のコイン数は"+count100);
-		System.out.println("10円のコイン数は"+count10);
-	}
+		//答え：13枚。500円のコイン数は6枚、100円のコイン数は3枚、10円のコイン数は4枚
+		// コイン数配列
+		int[] counts = { 0, 0, 0, 0, 0 };
+		// 金種配列
+		int[] types = { 500, 100, 10, 5, 1 };
 
+		int money = 3340;
+		int totalCount = 0;
+
+		for (int i = 0; i < types.length; i++) {
+			counts[i] = money / types[i];
+			money =money% types[i];
+			totalCount =totalCount+ counts[i];
+			if (counts[i]>0) {
+				System.out.println(types[i] + "円：" + counts[i] + "枚");
+			}
+			if(money==0) {//余りが0の場合、計算が終了する
+				break;
+			}
+		}
+		System.out.println("合計枚数：" + totalCount + "枚");
+	}
 }
