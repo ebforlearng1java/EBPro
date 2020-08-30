@@ -8,52 +8,55 @@ public class JavaHomeWork01 {
 
 		//** 01型＆式 *//
 
+		
+		//質問６：
+		
 
-				//質問１：
+		int x = 10;
 
-				int i = 10;
+		int y = 20;
 
-				int n = i % 5;
+		x = y;
 
-				System.out.println(0);
+		y = 30;
 
+		System.out.println(x); //20
 
-				//質問２：
+		System.out.println(y); //30
+		
 
-				//aは10より大きい場合：
+		//質問１：以下変数ｎの値は？
+		
 
-				System.out.println(11);
+		int i = 10;
 
-				//aは10以下の場合：
+		int n = i % 5;
 
-				System.out.println(0);
-
-
-				//質問３：
-				System.out.println("==");
-
-				//質問４：
-
-				System.out.println("true  false");
+		System.out.println(n);//0
 
 
+		//質問２：a = a >10 ? 11 : 0を解釈してください。
+		
 
-				//質問６：
+		//aは10より大きい場合：
 
-				int x = 10;
+		System.out.println(11);
 
-				int y = 20;
+		//aは10以下の場合：
 
-				x = y;
-
-				y = 30;
-
-				System.out.println(x); //20
-
-				System.out.println(y); //30
+		System.out.println(10);
 
 
-		// dummy commit
+		//質問３：変数値を比較する演算子は = or == ?
+		
+		System.out.println("==");
+
+		//質問４：boolbean偏すに設定可能な値は[？][？]
+
+		System.out.println("[true]  [false]");
+
+
+
 	}
 
 }
