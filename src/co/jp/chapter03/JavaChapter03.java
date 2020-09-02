@@ -72,15 +72,6 @@ public class JavaChapter03 {
 			System.out.println("E");
 		}
 
-		//0はJAVAの一番目の位置
-		//i<10 は10回、i<=10は11回
-		//for (int i= 0 ; i< 10 ; i++) {
-		//	System.out.println(i);
-		//}
-		//for (int i= 0 ; i<= 10 ; i++) {
-		//	System.out.println(i);
-		//}
-
 
 		//質問２:日本のコインを１円、５円、１０円、１００円、５００円があります。
 		//３３４０円のコイン数をもとめください。
@@ -114,20 +105,96 @@ public class JavaChapter03 {
 			System.out.println("500円" + coin2/500 + "枚");
 			coin2 = coin2%500;
 
-
 			System.out.println("100円" + coin2/100 + "枚");
 			coin2 = coin2%100;
 
 			System.out.println("10円" + coin2/10 + "枚");
 			coin2 = coin2%10;
 
-
 			System.out.println("5円" + coin2/5 + "枚");
 			coin2 = coin2%5;
 
-
 			System.out.println("1円" + coin2/1 + "枚");
 			coin2 = coin2%1;
+
+			//LOOPの一つはFORループ
+			//0はJAVAの一番目の位置
+			//i<10 は10回
+//			for (int i= 0 ; i< 10 ; i++) {
+//				System.out.println("FOR 10回　＝なし"+i);
+//			}
+//			System.out.println("________________________");
+//
+			//while
+			int j = 0;//dead loop
+			while (j < 10) {
+				System.out.println("while 佐助ナルト"+j);
+				j++;
+			}
+
+			//do while
+			int w = 0;
+			do {
+				System.out.println("do while の　ボルト"+j);
+				w++;
+			} while (w < 10);
+
+
+			//dead loops下のソースはdead code　デットロジック
+			//if (true) のelse　にも→　dead code（logic）　デットロジック
+
+
+
+
+
+			//i<=10は11回
+//			for (int i= 0 ; i<= 10 ; i++) {
+//				System.out.println("FOR 10回　＝あり"+i);
+//			}
+			//while (!=0(不等于0))
+			int k = 0;//dead loop
+			while (k <= 10) {
+				System.out.println("while 佐助ナルトsakura"+k);
+				k++;
+			}
+
+			//do while
+			int z = 0;
+			do {
+				System.out.println("do while の　ボルトZ"+z);
+				z++;
+			} while (z < 10);
+
+
+			///////////////////////////
+			//
+			for (int y= 0 ; y< 25 ; y++) {
+			System.out.print("1");
+			if (y>0 && (y+1)%5==0){
+				System.out.println();
+			}
+		  }
+			/////////////////////////////
+			int Y = 7;
+			for (int y= 0 ; y< (Y*Y) ; y++) {
+				System.out.print("1");
+				if (y>0 && (y+1)%Y==0){
+				System.out.println();
+				}
+			}
+
+			////////////////////////////
+			int x = 5;
+			for (int M = 0; M < x; M++) {
+				   for (int m = 0; m < x; m++) {
+					   if ((M + m) == x-1 || M == m){
+						   System.out.print(M + "" + m);
+					   } else {
+						   System.out.print("  ");
+					   }
+				   }
+				   System.out.println();
+			}
 
 
 
