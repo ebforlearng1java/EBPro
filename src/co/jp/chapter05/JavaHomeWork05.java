@@ -62,6 +62,7 @@ public class JavaHomeWork05 {
 					array_temp = array_01[array_01[i]];
 					array_01[array_01[i]] = array_01[i];
 					array_01[i] = array_temp;
+					System.out.println("array_01[" + i + "]" + "=" + array_01[i] +"");
 				}
 			}
 			System.out.println("array_01[" + i + "]" + "=" + array_01[i] +"");
@@ -75,18 +76,18 @@ public class JavaHomeWork05 {
 			}
 		}
 
-		// 質問６︓任意行列（２次元配列）の積を求める。
+		// 質問６︓任意行列（２次元配列）の和を求める。
 		// 答え：PRODUCT.
 		int n =0;
 		int m =0;
-		int PRODUCT = 1;
+		int PRODUCT = 0;
 		int[][] array_02 = new int[n][m];
 		for(int i =0;i<array_02.length;i++) {
 			for(int j =0;j<array_02[n].length;j++) {
-				PRODUCT *= array_02[n][m];
+				PRODUCT += array_02[n][m];
 			}
 		}
-		System.out.println(PRODUCT);
+		System.out.println("和は"+PRODUCT);
 
 		// 質問７︓配列を昇順でソートする（java.util等メソッド利用禁止）。
 		// 答え：配列{100, 10, 62, 32, 50, 88, 72, 5}を昇順でソートすると{1, 5, 10, 32, 50, 62, 72, 88, 100}になる。
@@ -103,19 +104,14 @@ public class JavaHomeWork05 {
 			}
 		}
 		for(int i= 0;i<array_03.length;i++) {
-			System.out.println(array_03[i]);
+			System.out.print(array_03[i]+" ");
 		}
+
+		System.out.println();
 
 		// 質問８：LV10のパスカルの三角形を出力してください。
 
 		int row = 10;
-		int[][] pascal = getTri(row);
-		printTri(pascal);
-
-
-	}
-
-	public static int[][] getTri(int row) {
 		int[][] pascal = new int[row][row];
 
 		for (int i = 0; i < row; i++) {
@@ -126,20 +122,15 @@ public class JavaHomeWork05 {
 				pascal[i][j] = pascal[i - 1][j] + pascal[i - 1][j - 1];
 			}
 		}
-		return pascal;
-	}
-
-	public static void printTri(int[][] pascal) {
 		for (int i = 0; i < pascal.length; i++) {
 			for(int j = 0;j<pascal.length-1-i;j++) {
 				System.out.print(" ");
 			}
 			for(int j = 0;j<=i;j++) {
 				System.out.print(" ");
-				System.out.printf("%-3d",pascal[i][j]);
+				System.out.printf("%-2d",pascal[i][j]);
 			}
 			System.out.println();
 		}
 	}
-
 }
