@@ -95,7 +95,7 @@ public class JavaChapter03 {
 int r = 10;
 		for (int w = 0; w < r; w++) {
 			for (int e = 0; e < r; e++) {
-				if (w == e || (w + e == r-1) || ((e%(5-1) == 0)&& w % (5-1) ==0)) {
+				if (w == e || (w + e == r-1)) {
 					System.out.print(w + "" + e + " ");
 				}
 				else {
