@@ -3,10 +3,15 @@ package co.jp.chapter01;
 public class JavaHomeWork01 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		//01型＆式
+		//質問1の答えは0
 
+		int i = 10;
+		int n = i % 5;
+		System.out.println(n);
+
+		//質問3の答えは　"=="
+		//質問４の答えはtrue,false
 	}
 
 }
-// 質問1　今現場で自分担当のフェーズと成果物
-//答え　ITa入力チェック
