@@ -41,21 +41,31 @@ public class JavaHomeWork03 {
 		int total_money = 3340;
 		int sum =0;
 		int[] combinations = new int[]{1, 5, 10, 50, 100, 500};
-		// 500円の可能数
+
+		// 500円の可能数（枚数はゼロ以上の場合）
 		for(int coin_500 =0;coin_500<= total_money/combinations[5];coin_500++) {
-			// 100円の可能数
+
+			// 100円の可能数（枚数はゼロ以上の場合）
 			for (int coin_100 =0;coin_100<= total_money/combinations[4];coin_100++) {
-				// 50円の可能数
+
+				// 50円の可能数（枚数はゼロ以上の場合）
 				for (int coin_50 =0;coin_50<= total_money/combinations[3];coin_50++) {
-					// 10円の可能数
+
+					// 10円の可能数（枚数はゼロ以上の場合）
 					for (int coin_10 =0;coin_10<= total_money/combinations[2];coin_10++) {
-						// 5円の可能数
+
+						// 5円の可能数（枚数はゼロ以上の場合）
 						for (int coin_5 =0;coin_5<= total_money/combinations[1];coin_5++) {
+
+								// 1円の可能数（枚数はゼロ以上の場合）
 								int coin_1 = total_money- (coin_500*combinations[5]+coin_100*combinations[4]
 									 +coin_50*combinations[3]+coin_10*combinations[2]+coin_5*combinations[1]);
+								// コインの総額を集計する
 								sum = coin_500*combinations[5]+coin_100*combinations[4]+coin_50*combinations[3]
 									 +coin_10*combinations[2]+coin_5*combinations[1]+coin_1*combinations[0];
+								// コインの数は3340の場合、かつ1円の枚数はゼロ以上の場合
 								if(sum == total_money && coin_1>=0) {
+								// 各種類のコインの枚数を出力する
 								System.out.println(coin_500+","+coin_100+","+coin_50+","+coin_10+","+coin_5+","+coin_1);
 
 							}
