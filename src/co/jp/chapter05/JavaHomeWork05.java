@@ -121,20 +121,19 @@ public class JavaHomeWork05 {
 
 
 		//質問８:LV10のパスカルの三角形を出力してください。
-
-			int row = 10;
-			int[][] a = new int[row][row];
-			for (int i = 0; i < a.length; i++) {
-				for (int j = 0; j <= i; j++) {
-					if (i == 0 || j == 0 || j == i) {
-						a[i][j] = 1;
-					} else {
-						a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
-					}
-					System.out.print(a[i][j] + " ");
+		int row = 10;
+		int[][] a = new int[row][row];
+		for(int i = 0; i < a.length; i++) {
+			for(int j = 0; j <= i; j++) {
+				if(i == 0 || j == 0 || i == j) {
+					a[i][j] = 1;
+				}else {
+					a[i][j] = a[i-1][j] + a[i-1][j-1];
 				}
-				System.out.println();
+				System.out.print(a[i][j] + "\t");
 			}
+			System.out.println();
+		}
 
 	}
 
