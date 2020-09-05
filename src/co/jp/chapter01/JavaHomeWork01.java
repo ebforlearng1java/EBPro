@@ -5,11 +5,8 @@ public class JavaHomeWork01 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-
-		System.out.println("questiong1");
-		int i = 10;
-		int n = i % 5;
-		System.out.println("nの値"+n);
 	}
 
 }
+// 質問1　今現場で自分担当のフェーズと成果物
+//答え　ITa入力チェック
