@@ -66,7 +66,7 @@ public class JavaHomeWork03 {
 		System.out.println(b+c+d+e+f+g);//コイン総数：13枚
 
 
-
+       
 
 
 
