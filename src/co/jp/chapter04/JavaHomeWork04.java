@@ -65,7 +65,8 @@ public class JavaHomeWork04 {
 		System.out.println("問題１の配列のSUM値:" + SUM);
 
 		// 問題７：行列（２次元配列）の和と積を計算してください。
-		// 回答：和は10、積は24。
+		// 回答①：一つの配列の行列（２次元配列）の和と積
+		//和は10、積は24。
 		int sum = 0;
 		int product = 1;
 		int[][] array7 = new int[][] { { 1, 2 }, { 3, 4 } };
@@ -77,6 +78,41 @@ public class JavaHomeWork04 {
 		}
 		System.out.println("和：" + sum);
 		System.out.println("積：" + product);
+
+		//回答②：二つ配列の行列（２次元配列）の和と積
+		//		  和：6 8 
+		//			  10 12 
+		//		  積：
+		//			  5 12 
+		//			  21 32 
+
+		int a[][] = new int[][] {
+				{ 1, 2 },
+				{ 3, 4 }
+		};
+		int b[][] = new int[][] {
+				{ 5, 6 },
+				{ 7, 8 }
+		};
+		int c[][] = new int[2][2];
+
+		System.out.println("和：");
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				c[i][j] += a[i][j] + b[i][j];
+				System.out.print(c[i][j] + " ");
+			}
+			System.out.println();
+		}
+
+		System.out.println("積：");
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				c[i][j] = a[i][j] * b[i][j];
+				System.out.print(c[i][j] + " ");
+			}
+			System.out.println();
+		}
 
 	}
 
