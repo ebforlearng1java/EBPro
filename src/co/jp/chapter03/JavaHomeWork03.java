@@ -5,7 +5,7 @@ public class JavaHomeWork03 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		
+		//質問１︓成績ランキング判断を作成する「90以上︓A, 80-90︓B, 70-80︓C, 60-70︓D, 60以下︓E」
 	System.out.println("質問１");
 		int a = 60;
 		System.out.println("成績ランキング判断。入力値=" + a);
@@ -23,9 +23,9 @@ public class JavaHomeWork03 {
 		}else {
 			System.out.println("成績無効です");
 		}
-		
-		
-		
+
+		//質問２︓⽇本のコインを１円、５円、１０円、１００円、５００円があります。３３４０円のコイン数をもとめください。
+
 		System.out.println("質問2");
 		int money = 3340;
 		int count500 = 0;
@@ -33,7 +33,7 @@ public class JavaHomeWork03 {
 		int count10 = 0;
 		int count5 = 0;
 		int count1 = 0;
-		
+
 		for(int i = 0;money >= 500;i++ ) {
 			money = money - 500;
 			count500++;
