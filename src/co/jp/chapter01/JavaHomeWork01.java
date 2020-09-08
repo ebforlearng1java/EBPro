@@ -19,7 +19,7 @@ public class JavaHomeWork01 {
 		//質問4:ブリアン( boolean )変数に設定可能の値は「?」「?」。
 		//true また false
 
-		//質問
+		//質問5:
 		int x =10;
 		int y =20;
 		x=y;
