@@ -8,6 +8,8 @@ public class JavaHomeWork05 {
 
 		        //質問1
 				//1から100までの偶数の和を求める(for+if)
+		        System.out.println();
+		        System.out.println("質問1");
 				int sum = 0;
 				for (int i = 1;i<=100;i++){
 					if(i%2 == 0){
@@ -20,6 +22,8 @@ public class JavaHomeWork05 {
 
 				//質問2
 				//5の階乗を求める(for)
+				System.out.println();
+				System.out.println("質問2");
 				int a = 1;
 				for (int j=1;j<=5;j++){
 					a = a*j;
@@ -27,6 +31,8 @@ public class JavaHomeWork05 {
 				System.out.println(a);
 
 				//質問3
+				System.out.println();
+				System.out.println("質問3");
 				int arr[] = new int[] {1,2,6,7,9,6,2,1};
 				//ここに注意すべきのは、maxの初期値に0を設定してはいけない
 				//最大値、最小値
@@ -57,6 +63,8 @@ public class JavaHomeWork05 {
 
 				//質問4
 				//質問3重複な要素を探す
+				System.out.println();
+				System.out.println("質問4");
 				int count=0;
 				for(int x=0;x<arr.length;x++) {
 					for(int y=x+1;y<arr.length;y++) {
@@ -76,6 +84,8 @@ public class JavaHomeWork05 {
 
 				//質問5
 				//質問3の配列に値「7」のインデックスを求め
+				System.out.println();
+				System.out.println("質問5");
 				for(int k=0;k<arr.length;k++) {
 					if(arr[k]==7) {
 						System.out.println("値「7」のインデックスは"+k+"です。");
@@ -85,6 +95,8 @@ public class JavaHomeWork05 {
 
 				//質問6
 				//二次元配列の積
+				System.out.println();
+				System.out.println("質問6");
 				System.out.println("この二つ二次元配列の積は以下となります。");
 				int[][] arr1 = new int[][] {
 					{1,2,3},{4,5,6}
@@ -106,6 +118,52 @@ public class JavaHomeWork05 {
 					}
 					System.out.println(" ");
 				}
+
+
+
+				//質問7
+				//配列を昇順でソートする。
+				System.out.println();
+				System.out.println("質問7");
+				int arr7[] = new int[] {1,2,7,6,9};
+				int empt = 0;
+				for(int p=0;p<arr7.length;p++) {
+					for(int q=1;q<arr7.length-p;q++) {
+						if(arr7[q-1]>arr7[q]) {
+							empt = arr7[q-1];
+							arr7[q-1] = arr7[q];
+							arr7[q] = empt;
+						}
+					}
+					System.out.println(arr7[p]);
+				}
+
+
+				//質問8
+				//LV10のパスカル三角形を出力
+				System.out.println();
+				System.out.println("質問8");
+				int n = 10;
+				int[][] arr8 = new int[n][n];
+				for (int i = 0; i < n; i++) {
+		            //格式化输出
+		            System.out.format("%" + (n - i) * 2 + "s", "");
+		            for (int j = 0; j <= i; j++) {
+		                if (j == 0 || j == i) {
+		                    arr8[i][j] = 1;
+		                } else {
+		                    arr8[i][j] = arr8[i - 1][j - 1] + arr8[i - 1][j];
+		                }
+
+		                System.out.format("%4d", arr8[i][j]);
+		            }
+
+		            System.out.println();
+		        }
+
+
+
+
 
 
 	}
