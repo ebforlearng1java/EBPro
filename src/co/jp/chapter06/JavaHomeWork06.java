@@ -33,17 +33,25 @@ public class JavaHomeWork06 {
 		
 		
 		//質問6-1
-		int[] left1 = new int[] {1, 2, 3, 4};
-		int[] right1 = new int[] {5, 6, 7, 8};
-		int[] result = megerArray(left1,right1,result);
-		mergerArray(result);
-	}
-
-
-	private static void mergerArray(int[] result) {
-		// TODO Auto-generated method stub
+		int[] left = new int[] {1, 2, 3, 4};
+		int[] right = new int[] {5, 6, 7, 8};
+		int[] result = megerArray(left,right);
+		System.out.println("マージしたResultの値は：");
+		printArrayInt(result);
 		
+		
+		//質問6-2
+		int[] array = new int[] {1, 2, 3, 4};
+		int startIndex = 1;
+		int length = 2;
+		int[] result1 = subArray(array,startIndex,length);
+		System.out.println("Resultは：");
+		printArrayInt(result1);
 	}
+
+
+
+
 
 
 	// 質問２．配列の和、MAX値、MIN値を求める処理を関数化してください、main関数に呼び出してください。
@@ -136,6 +144,23 @@ public class JavaHomeWork06 {
 		System.out.println(sb.toString());
 	}
 	
+	//質問6-1、6-2をプリントアウトするために使うメソッド
+	public static void printArrayInt(int[] ints) {
+		if (ints == null) {
+			System.out.println("null");
+			return;
+		}
+		String prefix = "";
+		StringBuilder sb = new StringBuilder();
+		sb.append("[");
+		for (int index : ints) {
+			sb.append(prefix);
+			sb.append(String.valueOf(index));
+			prefix = ", ";
+		}
+		sb.append("]");
+		System.out.println(sb.toString());
+	}
 	//質問６-１︓以下静的なメソッドを定義してください。
 //	1. メソッド名: megerArray
 //	2. 引数１︓intの配列 left
@@ -147,16 +172,33 @@ public class JavaHomeWork06 {
 //	int[] right = new int[] {5, 6, 7, 8};
 //	 メソッドを実施後
 //	int[] result = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
-	public static int[] megerArray(int[] left,int[] right,int[] result) {
+	public static int[] megerArray(int[] left,int[] right) {
 		int maxlength = left.length+right.length;
-		result = new int[maxlength];
-		for (int i = 0; i < result.length; i++) {
-			if(i<=left.length) {
+		int[] result = new int[maxlength];
+		for (int i = 0; i < left.length; i++) {
 				result[i] = left[i];
-			}else {
-				result[i] = right[i-right.length];
-			}		
+		}
+		for(int i = left.length; i< maxlength;i++) {
+			result[i] = right[i-left.length];
 		}
 		return result;
 	}
+	
+	//質問６-２︓以下静的なメソッドを定義してください。
+//	1. メソッド名: subArray
+//	2. 引数１︓intの配列 array
+//	3. 引数２︓開始のstartIndex
+//	4. 引数３︓⻑さlength
+//	5. 戻り値︓intの配列
+//	6. 処理内容︓startIndexからstartIndex + lengthまでサブ配列を取得する
+	public static int[] subArray (int[] array,int startIndex, int length) {
+		int endIndex = startIndex + length;
+		int[] result = new int[length];
+		for (int i = startIndex; i < endIndex; i++) {
+			result[i-startIndex] = array[i];
+		}
+		return result;
+		
+	}
+	
 }
