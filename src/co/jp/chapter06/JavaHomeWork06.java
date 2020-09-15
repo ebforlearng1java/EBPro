@@ -3,7 +3,7 @@ package co.jp.chapter06;
 public class JavaHomeWork06 {
 
 //	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+//		 TODO 自動生成されたメソッド・スタブ
 
 
 		//	質問1 以下関数の修飾子、返却型、関数名、引数（引数の型・名称）を回答してください。
@@ -57,11 +57,41 @@ public class JavaHomeWork06 {
 //
 
 
-		// 質問3 結果：nu||;
+//		// 質問3 以下メソッドの実施結果を教えてください。
+//        public class Kicker {
+//        	private static void sayHello(String y) {
+//        		y = "Hello world";
+//        	}
+//        	public static void main(String args[]) {
+//        		String x = null;
+//        		sayHello(x);
+//        		System.out.println(x);//null
+//        	}
+//        }
 
-		// 質問4 結果：value2;
+//		// 質問4 以下メソッドの実施結果を教えてください。
+//        public class Kicker {
+//	        private static void fillArray(String[] array) {
+//	             array[0] = "value2";
+//	        }
+//	        public static void main(String args[]) {
+//	            String[] array = new String[]{"value1"};
+//	            fillArray(array);
+//	            System.out.println(array[0]);//value2
+//	        }
+//        }
 
-		// 質問5 結果 : array = new String[] {1,2}
+		// 質問5 以下メソッドの実施結果を教えてください。
+//        public class Kicker {
+//        	private static void fillArray(String[] array) {
+//        		array = new String[]{"1", "2"};
+//        	}
+//        		public static void main(String args[]) {
+//        			String[] array = null;
+//        			fillArray(array);
+//        		    System.out.println(array == null);//ture
+//        	    }
+//        }
 
 		// 質問6-0　配列は直接に印刷できません。下記メソッドを利用して、配列をprintします。以下メソッドを呼び出してください。
 //	    public static void main(String[] args) {
