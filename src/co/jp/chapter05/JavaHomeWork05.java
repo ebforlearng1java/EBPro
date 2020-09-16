@@ -141,26 +141,21 @@ public class JavaHomeWork05 {
 			int p=i+1;
 
 			//このfor文は追加した部分です。
+			//一桁と二桁の関係でスペースが微妙になっています
 			for(int z=0;z<lv-i;z++){
-                System.out.print("  ");
+                System.out.print(" ");
             }
 
 			for(int j=0;j<=i;j++) {
 				if(j>0) {
 					num=num*(p-j)/j;
 				}
-				System.out.print(num+"  ");
+				System.out.print(num+" ");
 			}
 
 
 			System.out.println();
 		}
-
-
-
-
-
-
 
 
 
