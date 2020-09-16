@@ -116,6 +116,8 @@ public class JavaHomeWork05 {
 	    for (int i = 0; i < array23.length; i++) {
 	      //第二階層の１次元配列を宣言して、長さを設定する
 	      array23[i]=new int[i+1];
+
+	      //各行に空欄を設定する
 	      for(int m=1;m<array23.length-i;m++) {
 		        System.out.print("   ");
 	      }
