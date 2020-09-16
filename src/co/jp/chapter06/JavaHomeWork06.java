@@ -106,6 +106,7 @@ public class JavaHomeWork06 {
 	//		}
 	//	}
 	//答え：null
+	//同じパッケージに作成したクラスKickerに実現している。
 
 	//質問４︓以下メソッドの実施結果を教えてください。
 	//		public class Kicker {
@@ -119,6 +120,7 @@ public class JavaHomeWork06 {
 	//		 }
 	//		}
 	//答え：value2
+	//同じパッケージに作成したクラスKickerに実現している。
 
 	//質問５︓以下メソッドの実施結果を教えてください。
 	//	public class Kicker {
@@ -132,6 +134,7 @@ public class JavaHomeWork06 {
 	//		 }
 	//		}
 	//答え：true
+	//同じパッケージに作成したクラスKickerに実現している。
 
 	//質問６-０︓配列は直接に印刷できません。下記メソッドを利用して、配列をprintしま
 	//す。以下メソッドを呼び出してください。
