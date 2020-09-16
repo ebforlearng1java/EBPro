@@ -116,6 +116,9 @@ public class JavaHomeWork05 {
 	    for (int i = 0; i < array23.length; i++) {
 	      //第二階層の１次元配列を宣言して、長さを設定する
 	      array23[i]=new int[i+1];
+	      for(int m=1;m<array23.length-i;m++) {
+		        System.out.print("   ");
+	      }
 	      for(int j=0;j<=i;j++){
 	        //各行で最初と最後の要素の値を1に設定する
 	        if(j==0||j==i){
@@ -123,7 +126,8 @@ public class JavaHomeWork05 {
 	        }else{
 	          array23[i][j]=array23[i-1][j-1]+array23[i-1][j];
 	        }
-	        System.out.print(array23[i][j]+" ");
+	        System.out.printf("%-3d",array23[i][j]);
+	        System.out.print("   ");
 	      }
 	      System.out.println();
 	    }
