@@ -9,12 +9,14 @@ public class JavaChapter06 {
 //
 //	String kaishaAdress = "虎ノ門";
 
-
+	//クラスメンバー全局変数
 	//方法→method→メソッド
 	//函数→Function→関数
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
+		
+		//局部変数
 		//呼び出し
 		JavaChapter06 obj = new JavaChapter06();
 		obj.say();
