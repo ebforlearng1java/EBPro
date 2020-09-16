@@ -1,5 +1,8 @@
 package co.jp.chapter06;
 
+
+
+
 public class JavaChapter06 {
 
     //変数はクラスの直下においても大丈夫。
@@ -19,6 +22,12 @@ public class JavaChapter06 {
 		String word1 = "bbb";
 		String word2 = "ccc";
 		obj.sayWord2(word1,word2);
+
+
+
+
+	    //オーバーロード
+
 
 
 
@@ -47,4 +56,25 @@ public class JavaChapter06 {
 	}
 
 
+	//オーバーロード
+	//メソッド名が一緒ですが、引数が異なる
+	//条件：クラス同じ
+	void say3() {
+		System.out.println("Hi");
+	}
+
+	void say3(String word1) {
+		System.out.println(word1);
+	}
+
+	void say3(String word1,int kaisu) {
+		for (int i = 0;i<kaisu;i++) {
+			System.out.println(word1);
+		}
+
+	}
+
+
 }
+
+
