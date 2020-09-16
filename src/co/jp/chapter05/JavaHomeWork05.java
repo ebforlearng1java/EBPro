@@ -137,16 +137,24 @@ public class JavaHomeWork05 {
 		int num=1;
 
 		for(int i=0;i<lv;i++) {
+
 			int p=i+1;
+
+			//このfor文は追加した部分です。
+			for(int z=0;z<lv-i;z++){
+                System.out.print("  ");
+            }
+
 			for(int j=0;j<=i;j++) {
 				if(j>0) {
 					num=num*(p-j)/j;
 				}
-				System.out.print(num+" ");
+				System.out.print(num+"  ");
 			}
+
+
 			System.out.println();
 		}
-
 
 
 
