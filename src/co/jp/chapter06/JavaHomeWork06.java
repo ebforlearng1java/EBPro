@@ -33,6 +33,43 @@ public class JavaHomeWork06 {
 		System.out.println("質問5の実施結果：true");
 
 
+		//質問6-0
+		//配列を印刷するメソッドを呼び出す。
+		JavaHomeWork06 obj6 = new JavaHomeWork06();
+		Object[] arr6 = new Object[] {1,3,5,7,100,0,1};
+		obj6.printArray(arr6);
+
+		//質問6-1
+		//以下静的なメソッドを定義する。
+		JavaHomeWork06 obj6_1 = new JavaHomeWork06();
+		int[] left = new int[] {1,2,3};
+		int[] right = new int[] {4,5,6};
+		obj6_1.megerArray(left,right);
+
+		//質問6-2
+		//以下静的なメソッドを定義する。
+		JavaHomeWork06 obj6_2 = new JavaHomeWork06();
+		int[] array = new int[] {1,2,3,4};
+		int startIndex = 1;
+		int length = 2;
+		obj6_2.subArray(array,startIndex,length);
+
+
+		//質問7
+		//以下静的なメソッドを定義する。
+		JavaHomeWork06 obj7 = new JavaHomeWork06();
+		char[] input = new char[] {' ',' ',' ','A','B',' ',' ','C',' ',' '};
+		int index = obj7.trim(input);
+		int len = 3;
+		//input.subArray()
+
+
+		//質問8
+		JavaHomeWork06 obj8 = new JavaHomeWork06();
+		int [] arr8 = new int [] {7,6,4,9};
+		obj8.bubbleSort(arr8);
+
+
 	}
 
 	public static int searchMaxMinSum(int[] datas) {
@@ -55,6 +92,84 @@ public class JavaHomeWork06 {
 		System.out.println("最小値："+min);
 		System.out.println("和："+sum);
 		return 0;
+	}
+
+	public static void printArray(Object[] objs) {
+		if(objs==null) {
+			System.out.println("null");
+			return;
+		}
+		String prefix = "";
+		StringBuilder sb = new StringBuilder();
+		sb.append("[");
+		for(Object obj:objs) {
+			sb.append(prefix);
+			sb.append(String.valueOf(obj));
+			prefix = ", ";
+		}
+		sb.append("]");
+		System.out.println(sb.toString());
+	}
+
+	public static int[] megerArray(int[] left,int[] right) {
+		int[] c = new int[left.length+right.length];
+		for(int i = 0 ; i < c.length; i++) {
+			if(i<left.length) {
+				c[i] = left[i];
+			}
+			else {
+				c[i] = right[i-left.length];
+			}
+			System.out.print(c[i]);
+		}
+
+		return c;
+	}
+
+	public static int[] subArray(int[] array,int startIndex,int length) {
+		System.out.println();
+		int[] result = new int[length];
+		for(int i=0;i<result.length;i++) {
+			result[i]=array[startIndex+i];
+			System.out.print(result[i]);
+		}
+		return result;
+	}
+
+
+	public static int trim(char[] Char) {
+		int a = 0;
+		int b = 0;
+		for(int i=0;i<Char.length;i++) {
+			if(Char[i] != ' ') {
+				a = i;
+				break;
+			}
+		}
+		System.out.println();
+		System.out.println(a);
+
+		return a;
+
+	}
+
+
+	public static int[] bubbleSort(int[] arraybofore) {
+		//int[] arrayafter = new int[arraybofore.length];
+		int empt = 0;
+		for(int p=0;p<arraybofore.length;p++) {
+			for(int q=1;q<arraybofore.length-p;q++) {
+				if(arraybofore[q-1]>arraybofore[q]) {
+					empt = arraybofore[q-1];
+					arraybofore[q-1] = arraybofore[q];
+					arraybofore[q] = empt;
+				}
+
+			}
+			System.out.println(arraybofore[p]);
+
+		}
+		return arraybofore;
 	}
 
 
