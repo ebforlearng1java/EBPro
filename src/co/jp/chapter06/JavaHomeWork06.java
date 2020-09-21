@@ -16,7 +16,7 @@ public class JavaHomeWork06 {
 		System.out.println("--------Q2--------");
 		//Q2:配列の和、MAX値、MIN値を求める処理を関数化してください。
 		//main関数に呼び出してください
-		//A2 55行目から88のメソッドです
+		//A2 138行目から171のメソッドです
 
 		int[] dt2= new int[] {5,1,3,5,7,9};
 		int sum=sum(dt2);
@@ -56,7 +56,7 @@ public class JavaHomeWork06 {
 		System.out.println("--------Q6-0-------");
 		//Q6-0 配列は直接に印刷できません。以下メソッドを利用して、
 		//配列をprintします。以下メソッドを呼び出してください。
-		//A6-0
+		//A6-0 メソッド190行目から210
 		String[] array60 = new String[] {"good","cool"};
 		printArray(array60);
 		//printArray(null);
@@ -64,7 +64,7 @@ public class JavaHomeWork06 {
 
 		System.out.println("--------Q6-1-------");
 		//Q6-1以下静的なメソッドを定義してください。
-		//A6-1
+		//A6-1 メソッド212行目から229
 
 		int[] left = new int[] {1,2,3,4};
 		int[] right= new int[] {5,6,7,8};
@@ -74,7 +74,7 @@ public class JavaHomeWork06 {
 
 		System.out.println("--------Q6-2-------");
 		//Q6-2以下静的なメソッドを定義してください。
-		//A6-2
+		//A6-2 メソッド231行目から242
 		int[] array62 = new int[] {1,2,3,4};
 		int start=1;
 		int length=2;
@@ -84,7 +84,7 @@ public class JavaHomeWork06 {
 
 		System.out.println("--------Q7--------");
 		//Q7以下静的なメソッドを定義してください。
-		//A7
+		//A7 メソッド243行目から254
 		char[] input = new char[] {' ',' ','A','b',' ',' ','C',' '};
 		int[] tmp = new int[input.length];
 		int sta;
@@ -113,7 +113,23 @@ public class JavaHomeWork06 {
 
 
 		System.out.println("--------Q8--------");
-		//
+		//Q8:バブルソート用メソッドを作成してください。
+		//A8: メソッド257行目から279
+
+		int[] bub = new int[] {1,5,9,3,7};
+
+		bubbleSort(bub);
+
+
+
+		System.out.println("--------Q9--------");
+		//Q9:メソッドの呼び出す練習
+		//A9:
+
+		bubbleSort(megerArray(left,right));
+
+
+
 
 
 	}
@@ -237,7 +253,29 @@ public class JavaHomeWork06 {
 	}
 
 
+	//A8
+	public static int[] bubbleSort(int[] bub) {
 
+		int tmp;
+
+		for (int i = 0; i < bub.length-1; i++) {
+			for (int j = bub.length-1; j >i ; j--) {
+				if (bub[j - 1] > bub[j]) {
+					tmp = bub[j];
+					bub[j] = bub[j - 1];
+					bub[j - 1] = tmp;
+				}
+			}
+		}
+		System.out.println("バブルソート:");
+
+		for (int i = 0; i < bub.length; i++) {
+			System.out.print(bub[i]+" ");
+		}
+		System.out.println(" ");
+
+		return bub;
+	}
 
 
 
