@@ -277,8 +277,4 @@ public class JavaHomeWork06 {
 		return bub;
 	}
 
-
-
-
-
 }
