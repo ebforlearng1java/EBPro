@@ -2,10 +2,6 @@ package co.jp.chapter06;
 
 public class JavaHomeWork06 {
 
-//	public static void main(String[] args) {
-//		 TODO 自動生成されたメソッド・スタブ
-
-
 		//	質問1 以下関数の修飾子、返却型、関数名、引数（引数の型・名称）を回答してください。
 		//  public static void main(String[] args);
 		//  修飾子：public(公開） static（静的);
@@ -57,7 +53,7 @@ public class JavaHomeWork06 {
 //
 
 
-//		// 質問3 以下メソッドの実施結果を教えてください。
+		// 質問3 以下メソッドの実施結果を教えてください。
 //        public class Kicker {
 //        	private static void sayHello(String y) {
 //        		y = "Hello world";
@@ -93,7 +89,7 @@ public class JavaHomeWork06 {
 //        	    }
 //        }
 
-		// 質問6-0　配列は直接に印刷できません。下記メソッドを利用して、配列をprintします。以下メソッドを呼び出してください。
+//		// 質問6-0　配列は直接に印刷できません。下記メソッドを利用して、配列をprintします。以下メソッドを呼び出してください。
 //	    public static void main(String[] args) {
 //	        Object[] objs = {"abc", "1", "43", 3};
 //	        printArray(objs);
@@ -112,7 +108,7 @@ public class JavaHomeWork06 {
 //            prefix = ", ";
 //            }
 //            sb.append("]");
-//            System.out.println(sb.toString());//[abc, 1, 43, 3
+//            System.out.println(sb.toString());//[abc, 1, 43, 3]
 //        }
 
 
@@ -122,35 +118,48 @@ public class JavaHomeWork06 {
         //  3. 引数２︓intの配列 right
         //  4. 戻り値︓intの配列
         //  5. 処理内容︓引数left と 引数right をマージして、新しい配列を作成して返却する。
-//	   public static String[] megerArray (String[] left, String[] right) {
+//	public static void main(String[] args) {
+//		 // TODO 自動生成されたメソッド・スタブ
+//		int[] left = new int[] {1, 2, 3, 4};
+//		int[] right = new int[] {5, 6, 7, 8};
+//		int[] val;
+//		val  = megerArray(left,right);
 //
-//		  String[] c= new String[left.length+right.length];
-//
-//		  System.arraycopy(left, 0, c, 0, left.length);
-//
-//		  System.arraycopy( right, 0, c, left.length,  right.length);
-//
-//		  return c;
-//
+//		for (int i=0 ;i< val.length; i++) {
+//			System.out.print(val[i]);
 //		}
-
-	   //質問6-2 以下静的なメソッドを定義してください。
-	   // 1. メソッド名: subArray
-	   // 2. 引数１:intの配列 array
-	   // 3. 引数２:開始のstartIndex
-	   // 4. 引数３:長さlength
-	   // 5. 戻り値:intの配列
-	   // 6. 処理内容:startIndexからstartIndex + lengthまでサブ配列を取得する
+//	}
+//
+//	public static int[] megerArray (int [] left, int [] right) {
+//
+//		   int[] result = new int [left.length + right.length];
+//
+//		   for (int i = 0 ;i <  left.length ; i++) {
+//			   result[i] = left[i];
+//		   }
+//
+//		   for (int i = 0 ;i <  right.length ; i++) {
+//			   result[left.length + i] = right[i];
+//		   }
+//
+//		   return result;//12345678
+//	}
+//
+//	   //質問6-2 以下静的なメソッドを定義してください。
+//	   // 1. メソッド名: subArray
+//	   // 2. 引数１:intの配列 array
+//	   // 3. 引数２:開始のstartIndex
+//	   // 4. 引数３:長さlength
+//	   // 5. 戻り値:intの配列
+//	   // 6. 処理内容:startIndexからstartIndex + lengthまでサブ配列を取得する
 //	   public static int[] subArray (int[] startIndex, int[] length) {
 //		   int[] array  = new int[]{1,2,3,4};
 //		   for(int i = 0; i < array. length; i++){
 //			System.out.print(startIndex);
 //		   }
-//
 //		   return array ;
 //
-//
-//	  }
+//	   }
 
 //	   //質問7 以下静的なメソッドを定義してください。
 //       //  1. メソッド名︓trim
@@ -172,31 +181,30 @@ public class JavaHomeWork06 {
         // 2. 引数１︓intの配列
         // 3. 戻り値︓ソート済みの配列
         // 4. 処理内容︓bubbleSortアルゴリズムを用い、入力した引数の配列をソートしてください。
-//	      public static void main(String[] args) {
-//	          int[] nums = {3, 4, 6, 1, 22, 11, 15};
-//	          bubleSort(nums);
-//	      }
-//        public static void bubleSort(int nums[]) {
-//        	for(int i = 0; i < nums. length; i++) {
-//        		for(int j = nums. length - 1; j > i; j--) {
-//        			if(nums[j - 1] > nums[j]) {
-//        				int temp = nums[j];
-//        				nums[j] = nums[j - 1];
-//        				nums[j-1] = temp;
-//
-//        			}
-//        		}
-//        	}
-//        	for(int k = 0; k < nums. length; k++) {
-//        		System.out.print(nums[k] + " ");//3, 4, 6, 1, 22, 11, 15;
-//        	}
-//        }
+	      public static void main(String[] args) {
+	          int[] nums = {3, 4, 6, 1, 22, 11, 15};
+	          bubleSort(nums);
+	      }
+        public static void bubleSort(int nums[]) {
+        	for(int i = 0; i < nums. length; i++) {
+        		for(int j = nums. length - 1; j > i; j--) {
+        			if(nums[j - 1] > nums[j]) {
+        				int temp = nums[j];
+        				nums[j] = nums[j - 1];
+        				nums[j-1] = temp;
 
-
-
+        			}
+        		}
+        	}
+        	for(int k = 0; k < nums. length; k++) {
+        		System.out.print(nums[k] + " ");//1 3 4 6 11 15 22 ;
+        	}
+        }
 
         //質問9 メソッドの呼び出す練習。
 	    //1. 質問６-１を用い、２つ配列をマージします。
+        //2. 質問８を用い、ステップ1のマージした配列をソートする。
+        //3. 注意︓コードを１行にしてください。
 //	    public static void main(String[] args) {
 //		   String[] str1 = {"left"};
 //		   String[] str2 = {"right"};
@@ -213,7 +221,7 @@ public class JavaHomeWork06 {
 //	    }
 
 
-//	    // 2. 質問８を用い、ステップ1のマージした配列をソートする。
+//
 //	    public class bubleSort {
 //	    	int[] nums = {3, 4, 6, 1, 22, 11, 15};
 //	    	int[] b =new int[7];
@@ -225,9 +233,4 @@ public class JavaHomeWork06 {
 //
 //	    }
 
-
-
-
-
-//	}
-}
+	}
