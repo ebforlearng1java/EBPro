@@ -26,33 +26,45 @@ public class JavaHomeWork06 {
 		System.out.println("arrの和は" + sum(arr));
 		System.out.println("arrの最大値は" + max(arr));
 		System.out.println("arrの最小値は" + min(arr));
-		
-		//質問6-0
-		String[] objs = new String[] {"1","2","3","4","5"};
+
+		// 質問6-0
+		String[] objs = new String[] { "1", "2", "3", "4", "5" };
 		printArray(objs);
-		
-		
-		//質問6-1
-		int[] left = new int[] {1, 2, 3, 4};
-		int[] right = new int[] {5, 6, 7, 8};
-		int[] result = megerArray(left,right);
+
+		// 質問6-1
+		int[] left = new int[] { 1, 2, 3, 4 };
+		int[] right = new int[] { 5, 6, 7, 8 };
+		int[] result = megerArray(left, right);
 		System.out.println("マージしたResultの値は：");
 		printArrayInt(result);
-		
-		
-		//質問6-2
-		int[] array = new int[] {1, 2, 3, 4};
+
+		// 質問6-2
+		int[] array = new int[] { 1, 2, 3, 4 };
 		int startIndex = 1;
 		int length = 2;
-		int[] result1 = subArray(array,startIndex,length);
+		int[] result1 = subArray(array, startIndex, length);
 		System.out.println("Resultは：");
 		printArrayInt(result1);
+
+		// 質問7
+		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
+		char[] output = trim(input);
+		System.out.println("７のResultは：");
+		printArrayChar(output);
+		
+		//質問８
+		System.out.println("8のResultは：");
+		printArrayInt(bubbleSort(arr));
+		
+		//質問9
+		int[] left_1 = new int[] {11,8,5,18,24};
+		int[] right_1 = new int[] {2,25,10,17,6};
+		int[] result_1 = megerArray(left_1,right_1);
+		result_1 = bubbleSort(result_1);
+		System.out.println("9のResultは：");
+		printArrayInt(result_1);
+		
 	}
-
-
-
-
-
 
 	// 質問２．配列の和、MAX値、MIN値を求める処理を関数化してください、main関数に呼び出してください。
 	// 例：配列のMax値を求めるメソッド
@@ -143,8 +155,8 @@ public class JavaHomeWork06 {
 		sb.append("]");
 		System.out.println(sb.toString());
 	}
-	
-	//質問6-1、6-2をプリントアウトするために使うメソッド
+
+	// 質問6-1、6-2をプリントアウトするために使うメソッド
 	public static void printArrayInt(int[] ints) {
 		if (ints == null) {
 			System.out.println("null");
@@ -161,7 +173,21 @@ public class JavaHomeWork06 {
 		sb.append("]");
 		System.out.println(sb.toString());
 	}
-	//質問６-１︓以下静的なメソッドを定義してください。
+
+	public static void printArrayChar(char[] chars) {
+		String prefix = "";
+		StringBuilder sb = new StringBuilder();
+		sb.append("      [");
+		for (char item : chars) {
+			sb.append(prefix);
+			sb.append(String.valueOf(item));
+			prefix = ", ";
+		}
+		sb.append("]");
+		System.out.println(sb.toString());
+	}
+
+	// 質問６-１︓以下静的なメソッドを定義してください。
 //	1. メソッド名: megerArray
 //	2. 引数１︓intの配列 left
 //	3. 引数２︓intの配列 right
@@ -172,33 +198,88 @@ public class JavaHomeWork06 {
 //	int[] right = new int[] {5, 6, 7, 8};
 //	 メソッドを実施後
 //	int[] result = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
-	public static int[] megerArray(int[] left,int[] right) {
-		int maxlength = left.length+right.length;
+	public static int[] megerArray(int[] left, int[] right) {
+		int maxlength = left.length + right.length;
 		int[] result = new int[maxlength];
 		for (int i = 0; i < left.length; i++) {
-				result[i] = left[i];
+			result[i] = left[i];
 		}
-		for(int i = left.length; i< maxlength;i++) {
-			result[i] = right[i-left.length];
+		for (int i = left.length; i < maxlength; i++) {
+			result[i] = right[i - left.length];
 		}
 		return result;
 	}
-	
-	//質問６-２︓以下静的なメソッドを定義してください。
+
+	// 質問６-２︓以下静的なメソッドを定義してください。
 //	1. メソッド名: subArray
 //	2. 引数１︓intの配列 array
 //	3. 引数２︓開始のstartIndex
 //	4. 引数３︓⻑さlength
 //	5. 戻り値︓intの配列
 //	6. 処理内容︓startIndexからstartIndex + lengthまでサブ配列を取得する
-	public static int[] subArray (int[] array,int startIndex, int length) {
+	public static int[] subArray(int[] array, int startIndex, int length) {
 		int endIndex = startIndex + length;
 		int[] result = new int[length];
 		for (int i = startIndex; i < endIndex; i++) {
-			result[i-startIndex] = array[i];
+			result[i - startIndex] = array[i];
 		}
 		return result;
-		
+
 	}
+
+//	質問７︓以下静的なメソッドを定義してください。
+//	1. メソッド名︓trim
+//	2. 引数１︓charの配列
+//	3. 戻り値︓charの配列
+//	4. 処理内容︓引数１のcharの配列先頭と末尾の空⽩⽂字列を削除してください。
+	public static char[] trim(char[] array) {
+		int mae = -1;
+		int ushiro = -1;
+
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] != ' ') {
+				mae = i;
+				break;
+			}
+		}
+
+		for (int i = array.length-1; i >= 0; i--) {
+			if (array[i] != ' ') {
+				ushiro = i;
+				break;
+			}
+		}
+
+		int nagasa = mae - ushiro + 1;
+		char[] output = new char[nagasa];
+		for (int i = mae; i <= ushiro; i++) {
+			output[i - mae] = array[i];
+		}
+		return output;
+
+	}
+
+//	質問８︓バブルソート⽤メソッドを作成してください。
+//	1. メソッド名︓bubbleSort
+//	2. 引数１︓intの配列
+//	3. 戻り値︓ソート済みの配列
+//	4. 処理内容︓bubbleSortアルゴリズムを⽤い、⼊⼒した引数の配列をソートしてください。
+	public static int[] bubbleSort(int[] arr) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = 0; j < arr.length - 1 - i; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int change=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=change;
+				}
+			}
+		}
+		return arr;
+	}
+
+//	質問９︓メソッドの呼び出す練習。
+//	1. 質問６-１を⽤い、２つ配列をマージします。
+//	2. 質問８を⽤い、ステップ１のマージした配列をソートする。
+//	3. 注意︓コードを１⾏にしてください。
 	
 }
