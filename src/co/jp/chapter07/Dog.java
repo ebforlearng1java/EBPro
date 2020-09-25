@@ -6,10 +6,50 @@ public class Dog {
 	private String name;
 
 	//age
-	private String age;
+	private int age;
 
 	//sex
 	private String sex;
+
+
+	//暗然なコンストラクタ
+	//暗然なコンストラクタを明示化にする
+	//特殊のメソッド
+//	Dog()
+//	{
+//		インスタンスを返す処理
+//	}
+
+	//カプセル
+	Dog(String name, int age, String sex){
+		//初期化
+		//全部　　　＝　局部
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+
+
+
+//	Dog(int age, String sex){
+//
+//		this.age = age;
+//		this.sex = sex;
+//	}
+
+
+	public Dog() {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+
+//	public Dog(String name, int age, String sex) {
+//		super();
+//		this.name = name;
+//		this.age = age;
+//		this.sex = sex;
+//	}
+
 
 	public String getName() {
 		return name;
@@ -19,11 +59,11 @@ public class Dog {
 		this.name = name;
 	}
 
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
