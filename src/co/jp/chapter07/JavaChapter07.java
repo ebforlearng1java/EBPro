@@ -6,7 +6,10 @@ public class JavaChapter07 {
 		// TODO 自動生成されたメソッド・スタブ
 
 
-		//
+		//インスタンス
+
+
+
 
 	}
 
