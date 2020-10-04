@@ -14,7 +14,38 @@ public class JavaHomeWork08 {
 
 		String empty = "";
 		String nullString = null;
-		System.out.println(nullString.equals(empty));
+		System.out.println(nullString.equals(empty));//false//原因：nullは空文字と等しくない。
+
+
+		//質問2
+		//以下コードの出力は何か
+		//System.out.println(x == y); false
+		//System.out.println(x.equals(y)); true
+
+
+		//質問3
+		//以下コンパイルエラーを修正済みです。
+		// Kicker.java
+		//public class Kicker {
+		//public static void print(Child v) {
+			// v.hello();
+			// }
+		//■コードを追加する。START
+		//public static void print2(Parent u) {
+			// u.hello();
+			// }
+		//■コードを追加する。END
+
+		//public static void main(String[] args) {
+		//◆printはprint2に変更する。
+		    //print2(new Parent());
+			//print(new Child());
+
+		//}
+
+	//}
+
+
 
 
 	}
