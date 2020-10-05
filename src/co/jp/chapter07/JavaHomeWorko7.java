@@ -6,6 +6,9 @@ public class JavaHomeWorko7 {
 		// TODO 自動生成されたメソッド・スタブ
 
 
+
+
+
 		//質問1
 		//以下コンパイルエラー理由を教えてください。
 		// System.out.println("finalに修飾された変数は１回のみ値変更可能です。");
