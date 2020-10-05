@@ -47,7 +47,7 @@ public class JavaHomeWork08 {
 //			System.out.println(x.equals(y)); // true ? false? 原因は ?
 //			}
 //			}
-		System.out.println("x == y ：違うインターフェイスにいる、物理の位置も違う、False\n"+"x.equals(y)：idは同じ");
+		System.out.println("x == y ：違うインスタンスにいる、物理の位置も違う、False\n"+"x.equals(y)：idは同じ");
 		
 //		質問３︓以下コンパイルを修正してください。
 //		// Parent.java
