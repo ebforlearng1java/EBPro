@@ -13,7 +13,7 @@ public class JavaHomeWork07 {
 		//public class Kicker {
 		//public static void main(String...args) {
 		//Pet cat = new Pet();
-		//cat.setAge(1234);✖⇒cat.setName(1234);
+		//cat.setAge(1234);✖⇒メソッドはsetAgeではなく、setNameですから。
 		//}
 		//}
 	
