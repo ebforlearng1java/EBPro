@@ -84,6 +84,54 @@ public class JavaHomeWork09 {
 		
 //		質問１３︓クラス「Animal」を定義して、インスタンス化しオブジェクト cat を作成しま
 //		す。変数catのsayHello()メソッドを呼び出してください。
+		Animal cat = new Animal();
+		cat.setName("Hellokitty");
+		cat.setAge(10);
+		cat.setType("cat");
+		cat.sayHello();
+		
+//		質問１４︓以下１⾏を解釈してください。
+//		System.out.println(new Animal("cat").getName());
+		System.out.println("インスタンスAnimalからcatのnameを取得する");
+		
+//		質問１５︓クラス継承する⽤キーワードは「extends 」︖
+		System.out.println("extends");
+		
+//		質問１６︓継承しているクラス。上位クラスは「親クラス」・「スーパークラス」。下位
+//		クラスは「サブクラス」と呼びます。
+		
+//		質問１７︓サブクラス＆アクセス制御（ public, protected ）。
+		
+//		質問１８︓サブクラスと親クラス同じメソッド名かつメソッドの引数は⼀致する場合、
+//		「オーバーライド」となります。
+		
+//		質問１９︓以下Animalクラスを継承して以下２クラスを作成してください。
+//		1. クラス Cat。sayHelloメソッドをオーバーライドして、System.out.println(“ニャー“);
+//		2. クラス Dog。sayHelloメソッドをオーバーライドして、System.out.println(“ワン“);
+//		※親クラスに明⽰的なコンストラクタが存在しない場合、サブクラスは必ず親クラスのコ
+//		ンストラクタをオーバーライドします。
+		System.out.println("Cat Dogクラスを参照");
+		
+		
+//		2. クラス Dog。sayHelloメソッドをオーバーライドして、System.out.println(“ワン“);
+//		※親クラスに明⽰的なコンストラクタが存在しない場合、サブクラスは必ず親クラスのコ
+//		ンストラクタをオーバーライドします。
+//		質問２０︓以下コードをIS-A関係で説明してください。
+//
+//		System.out.println("1234"); // 静的のField
+//		String value = String.format("%05d", 0); // 静的のメソッド
+//      System.out.println(new Animal("cat").getName());
+//
+//		Animal v0 = new Animal(); // v0 は Animal 型
+//		Animal v1 = new Cat("a cat"); // v1 は Cat 型, v1 は Animal 型
+//		Animal v2 = new Dog("a dog"); // v2 は Dog 型, v2 は Animal 型
+//		Cat v3 = new Cat(""); // OK
+//		Dog v4 = new Dog(""); // OK
+//		Cat v5 = new Animal(""); // NG
+		
+
+		
+		
 		
 		
 
