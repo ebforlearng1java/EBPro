@@ -117,7 +117,7 @@ public class JavaHomeWork06 {
 
 	//配列のMIN値の取得処理
 	public static int min(int[] array) {
-		int min = array[1];
+		int min = array[0];
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] < min) {
 				min = array[i];
