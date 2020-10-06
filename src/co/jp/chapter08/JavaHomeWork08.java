@@ -10,10 +10,8 @@ public class JavaHomeWork08 {
 	String empty = "";
 	String nullString = null;
 	System.out.println(nullString.equals(empty));// false;null不等于空字符串
-	
 	}
 	
-	//質問２︓以下コードの出力を回答してください。
 	
 	
 	
