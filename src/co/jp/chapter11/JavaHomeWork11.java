@@ -8,8 +8,17 @@ public class JavaHomeWork11 {
 		//質問1
 		//クラスLineを参照してください。
 
+
+
+
 		//質問2
 		//クラスLineを参照してください。
+
+
+
+
+		//質問3
+		//クラスJoushyaを参照してください。
 
 
 	}
