@@ -55,6 +55,10 @@ public class JavaHomeWork06 {
 		obj6_2.subArray(array,startIndex,length);
 
 
+
+
+
+
 		//質問7
 		//以下静的なメソッドを定義する。
 		JavaHomeWork06 obj7 = new JavaHomeWork06();
@@ -69,6 +73,10 @@ public class JavaHomeWork06 {
 		JavaHomeWork06 obj8 = new JavaHomeWork06();
 		int [] arr8 = new int [] {7,6,4,9};
 		obj8.bubbleSort(arr8);
+
+
+		//質問9
+		obj8.bubbleSort(obj6_1.megerArray(left,right));
 
 
 	}
