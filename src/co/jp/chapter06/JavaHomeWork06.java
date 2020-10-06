@@ -2,143 +2,8 @@ package co.jp.chapter06;
 
 public class JavaHomeWork06 {
 
-
+ 
 		// TODO 自動生成されたメソッド・スタブ
-
-	//質問２メソッド
-	public static int sum(int[] datas) {
-
-		int sum = datas[0];
-        for(int i = 1; i < datas.length; i++) {
-        	sum += datas[i];
-        	}
-		return sum;
-	}
-	public static int max(int[] datas) {
-
-		int max = datas[0];
-        for(int i = 0; i < datas.length; i++) {
-        	if(datas[i] > max) {
-        	max = datas[i];
-        	}
-        	}
-		return max;
-	}
-		public static int min(int[] datas) {
-
-			int min = datas[0];
-			for(int i = 0; i < datas.length; i++) {
-	        	if(datas[i] < min) {
-	        	min = datas[i];
-	        	}
-	        	}
-			return min;
-		}
-		//質問3メソッド
-		private static void sayHello(String y) {
-			y = "Hello world";
-			}
-		//質問4メソッド
-		private static void fillArray(String[] array) {
-			array[0] = "value2";
-		}
-		//質問5メソッド
-		private static void fillArray2(String[] array) {
-			array = new String[]{"1", "2"};
-			}
-
-		//質問6-0メソッド
-		public static void printArray(Object[] objs) {
-			if(objs == null) {
-			System.out.println("null");
-			return;
-			}
-			String prefix = "";
-			StringBuilder sb = new StringBuilder();
-			sb.append("[");
-			for(Object obj : objs) {
-			sb.append(prefix);
-			sb.append(String.valueOf(obj));
-			prefix = ", ";
-			}
-			sb.append("]");
-			System.out.println(sb.toString());
-			}
-
-		//質問6-1メソッド
-		public static int[] mergeArray(int[] left,int[] right) {
-
-
-			int merge [] = new int [left.length + right.length];
-			int c = 0;
-			for(int i = 0 ; i < left.length; i ++){
-				merge[i] = left[i];
-			}
-			for(int i = left.length; i < merge.length; i ++){
-				merge[i] = right[c];
-			c ++;
-			}
-			for(int i = 0;i < left.length + right.length ;i ++){
-				System.out.print(merge[i]);
-				}
-			return merge;
-		}
-
-		//質問6-2メソッド
-		public static int[] subArray(int[] array,int startIndex,int length) {
-			int[] result = new int[length];
-			for(int i=0;i<result.length;i++) {
-				result[i]=array[startIndex+i];
-				System.out.print(result[i]);
-			}
-			return result;
-
-
-		}
-		//質問7メソッド
-		public static char[] trim(char[]input) {
-			int start = 0;
-			int end = input.length;
-
-			for (int i = 0; i < input.length; i++) {
-				if (input[i] != ' ') {
-					start = i;
-					break;
-				}
-		}
-			for (int i = input.length-1; i > 0; i--) {
-				if (input[i] != ' ') {
-					end = i+1;
-					break;
-				}
-		}
-			for(int i = start;i < end;i++) {
-				System.out.print(input[i]);
-			}
-			return input;
-		}
-		//質問8メソッド
-		public static int[] bubbleSort(int[] bubble) {
-
-			for(int i = 0; i < bubble.length; i++) {
-				int temp = 0;
-	        	for(int j = i+1;j < bubble.length; j++) {
-					if(bubble[i] > bubble[j]) {
-						temp = bubble[i];
-						bubble[i] = bubble[j];
-						bubble[j] = temp;
-					}
-				}
-	        }
-			for(int i = 0; i < bubble.length; i++) {
-				System.out.print(bubble[i]);
-		}
-			return bubble;
-
-
-		}
-
-
 
 		public static void main(String[] args) {
 
@@ -218,11 +83,140 @@ public class JavaHomeWork06 {
 
 		//質問９︓メソッドの呼び出す練習。
 
-
-
-
-
 				}
+		
+		//質問２メソッド
+		public static int sum(int[] datas) {
+
+			int sum = datas[0];
+	        for(int i = 1; i < datas.length; i++) {
+	        	sum += datas[i];
+	        	}
+			return sum;
+		}
+		public static int max(int[] datas) {
+
+			int max = datas[0];
+	        for(int i = 0; i < datas.length; i++) {
+	        	if(datas[i] > max) {
+	        	max = datas[i];
+	        	}
+	        	}
+			return max;
+		}
+			public static int min(int[] datas) {
+
+				int min = datas[0];
+				for(int i = 0; i < datas.length; i++) {
+		        	if(datas[i] < min) {
+		        	min = datas[i];
+		        	}
+		        	}
+				return min;
+			}
+			//質問3メソッド
+			private static void sayHello(String y) {
+				y = "Hello world";
+				}
+			//質問4メソッド
+			private static void fillArray(String[] array) {
+				array[0] = "value2";
+			}
+			//質問5メソッド
+			private static void fillArray2(String[] array) {
+				array = new String[]{"1", "2"};
+				}
+
+			//質問6-0メソッド
+			public static void printArray(Object[] objs) {
+				if(objs == null) {
+				System.out.println("null");
+				return;
+				}
+				String prefix = "";
+				StringBuilder sb = new StringBuilder();
+				sb.append("[");
+				for(Object obj : objs) {
+				sb.append(prefix);
+				sb.append(String.valueOf(obj));
+				prefix = ", ";
+				}
+				sb.append("]");
+				System.out.println(sb.toString());
+				}  
+
+			//質問6-1メソッド
+			public static int[] mergeArray(int[] left,int[] right) {
+
+
+				int merge [] = new int [left.length + right.length];
+				int c = 0;
+				for(int i = 0 ; i < left.length; i ++){
+					merge[i] = left[i];
+				}
+				for(int i = left.length; i < merge.length; i ++){
+					merge[i] = right[c];
+				c ++;
+				}
+				for(int i = 0;i < left.length + right.length ;i ++){
+					System.out.print(merge[i]);
+					}
+				return merge;
+			}
+
+			//質問6-2メソッド
+			public static int[] subArray(int[] array,int startIndex,int length) {
+				int[] result = new int[length];
+				for(int i=0;i<result.length;i++) {
+					result[i]=array[startIndex+i];
+					System.out.print(result[i]);
+				}
+				return result;
+
+
+			}
+			//質問7メソッド
+			public static char[] trim(char[]input) {
+				int start = 0;
+				int end = input.length;
+
+				for (int i = 0; i < input.length; i++) {
+					if (input[i] != ' ') {
+						start = i;
+						break;
+					}
+			}
+				for (int i = input.length-1; i > 0; i--) {
+					if (input[i] != ' ') {
+						end = i+1;
+						break;
+					}
+			}
+				for(int i = start;i < end;i++) {
+					System.out.print(input[i]);
+				}
+				return input;
+			}
+			//質問8メソッド
+			public static int[] bubbleSort(int[] bubble) {
+
+				for(int i = 0; i < bubble.length; i++) {
+					int temp = 0;
+		        	for(int j = i+1;j < bubble.length; j++) {
+						if(bubble[i] > bubble[j]) {
+							temp = bubble[i];
+							bubble[i] = bubble[j];
+							bubble[j] = temp;
+						}
+					}
+		        }
+				for(int i = 0; i < bubble.length; i++) {
+					System.out.print(bubble[i]);
+			}
+				return bubble;
+
+
+			}
 }
 
 
