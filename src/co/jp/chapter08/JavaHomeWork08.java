@@ -19,8 +19,8 @@ public class JavaHomeWork08 {
 
 		//質問2
 		//以下コードの出力は何か
-		//System.out.println(x == y); false
-		//System.out.println(x.equals(y)); true
+		//System.out.println(x == y); false 原因：インスタンスが違います。
+		//System.out.println(x.equals(y)); true 原因：ただ値の比較。
 
 
 		//質問3
