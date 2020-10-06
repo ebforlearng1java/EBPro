@@ -59,9 +59,10 @@ public class JavaHomeWork06 {
 		//以下静的なメソッドを定義する。
 		JavaHomeWork06 obj7 = new JavaHomeWork06();
 		char[] input = new char[] {' ',' ',' ','A','B',' ',' ','C',' ',' '};
-		int index = obj7.trim(input);
-		int len = 3;
-		//input.subArray()
+		char[] output = trim(input);
+		System.out.println(output);
+		obj7.trim(input);
+
 
 
 		//質問8
@@ -137,7 +138,9 @@ public class JavaHomeWork06 {
 	}
 
 
-	public static int trim(char[] Char) {
+
+
+	public static char[] trim(char[] Char) {
 		int a = 0;
 		int b = 0;
 		for(int i=0;i<Char.length;i++) {
@@ -146,10 +149,19 @@ public class JavaHomeWork06 {
 				break;
 			}
 		}
-		System.out.println();
-		System.out.println(a);
-
-		return a;
+		for(int i=Char.length-1;i>=0;i--) {
+			if(Char[i] != ' ') {
+				b = i;
+				break;
+			}
+		}
+		int len = a - b + 1;
+		char[] output2 = new char[len];
+		for (int i = a; i <= b; i++) {
+			output2[i - a] = Char[i];
+		}
+		System.out.print(output2);
+		return output2;
 
 	}
 
