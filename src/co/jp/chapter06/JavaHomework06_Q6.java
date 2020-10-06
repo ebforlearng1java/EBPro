@@ -13,7 +13,7 @@ public class JavaHomework06_Q6 {
 
 
 	   //質問６－１
-	   int i = 0;
+	    int i = 0;
 	    System.out.print("質問６－１の答え：");
 	    mergeArray(i);
 
