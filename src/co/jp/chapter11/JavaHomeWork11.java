@@ -6,7 +6,7 @@ public class JavaHomeWork11 {
 		// TODO 自動生成されたメソッド・スタブ
 
 		//質問1
-		//クラスLineを参照してください。
+		//クラスLineとStationを参照してください。
 
 
 
