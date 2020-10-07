@@ -9,8 +9,8 @@ public class JavaHomeWork06 {
 		//  関数名 : main;
 		//  引数名 : args;  引数型 : String[] (Stringの配列型);
 
-//		// 質問2 配列の和、MAX値、MIN値を求める処理を関数化してください、main関数に呼び出してください。
-//		//配列の和を求めるメソッド
+		// 質問2 配列の和、MAX値、MIN値を求める処理を関数化してください、main関数に呼び出してください。
+		//配列の和を求めるメソッド
 	public static void main(String[] args) {
 		int [] array = {1,5,10,8,9};
 		int sum = 0;
@@ -176,15 +176,34 @@ public class JavaHomeWork06 {
 //       //  2. 引数１︓charの配列
 //       //  3. 戻り値︓charの配列
 //       //  4. 処理内容︓引数１のcharの配列先頭と末尾の空白文を削除してください。
-//       public void main(String args[]){
-//    	   char[] input = new char[] {' ', ' ', 'A', 'b', ' ', ' ', 'C', ' '};
-//   	       System.out.println("元の文字列「" + char + "」");
-//   	       System.out.println("文字数は" + char.length() + "です");
-//           String new_char =char.trim();
-//           System.out.println("空白を取り除いた文字列「" + new_char + "」");
-//           System.out.println("文字数は" + new_char.length() + "です");//NG
-//       }
+//      //以下メソッドの実施例：
+//		//char[] input = new char[] {' ', ' ', 'A', 'b', ' ', ' ', 'C', ' '}; // 入力引数
+//	 	//メソッドを実施後
+//	 	//char[] output = new char[] {'A', 'b', ' ', ' ', 'C'}; // 入力引数
+//		//呼び出し先
+//		public static char[] trim(char[] array) {
+//			int startIndex = 0;
+//			int endIndex = 0;
+//			for (int i = 0; i < array.length; i++) {
+//				if (array[i] != ' ') {
+//					startIndex = i;
+//					break;
+//				}
+//			}
+//	    	for (int i = array.length - 1; i >= 0; i--) {
 //
+//			    if (array[i] != ' ') {
+//					endIndex = i;
+//					break;
+//				}
+//			}
+//			int size = endIndex - startIndex + 1;
+//	 		char[] output = new char[size];
+//			for (int i = startIndex; i <= endIndex; i++) {
+//				output[i - startIndex] = array[i];
+//			}
+//			return output;
+//		}
 
         // 質問8  バブルソート用いてメソッドを作成してください。
         // 1. メソッド名︓bubbleSort
