@@ -77,11 +77,11 @@ public class JavaChapter04 {
 
 		for (int i = 0; i<arrStr.length;i++) {
 
-			if (i < (arrStr.length / 2)) {
-				arrStr[i] = arrStr(i + 1) * 2;
-			} else {
-				arrStr[i] = arrStr((i - (arrStr.length / 2)) + 1) * 2 - 1;
-			}
+//			if (i < (arrStr.length / 2)) {
+//				arrStr[i] = arrStr(i + 1) * 2;
+//			} else {
+//				arrStr[i] = arrStr((i - (arrStr.length / 2)) + 1) * 2 - 1;
+//			}
 
 			System.out.println(arrStr[i]);
 		}
@@ -110,7 +110,7 @@ public class JavaChapter04 {
 		int[][] arrC = new int[2][2] ;
 
 		for (int i = 0; i < 2; i++) {
-			for ()
+
 
 		}
 
