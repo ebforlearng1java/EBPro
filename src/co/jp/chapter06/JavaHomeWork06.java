@@ -1,5 +1,7 @@
 package co.jp.chapter06;
 
+import java.util.Arrays;
+
 public class JavaHomeWork06 {
 
 	public static void main(String[] args) {
@@ -60,20 +62,25 @@ public class JavaHomeWork06 {
 
 		//質問５.以下メソッドの実施結果を教えてください。
 		//実施結果はtrueと思う。
-		
+
 		//質問６-０:配列は直接に印刷できません。下記メソッドを利用して、
 		//配列をprintします。以下メソッドを呼び出してください。
-
-
-
-
-
-
-
-
-
-
-
+//		public static void printArray(Object[] objs) {
+//			 if(objs == null) {
+//			 System.out.println("null");
+//			 return;
+//			 }
+//			 String prefix = "";
+//			 StringBuilder sb = new StringBuilder();
+//			 sb.append("[");
+//			 for(Object obj : objs) {
+//			 sb.append(prefix);
+//			 sb.append(String.valueOf(obj));
+//			 prefix = ", ";
+//			 }
+//			 sb.append("]");
+//			 System.out.println(sb.toString());
+//			}
 
 		//質問６-１:以下静的なメソッドを定義してください。
 		//1. メソッド名: megerArray
@@ -81,15 +88,6 @@ public class JavaHomeWork06 {
 		//3. 引数２︓intの配列 right
 		//4. 戻り値︓intの配列
 		//5. 処理内容︓引数left と 引数right をマージして、新しい配列を作成して返却する。
-
-
-
-
-
-
-
-
-
 		//質問６-２:以下静的なメソッドを定義してください。
 		//1. メソッド名: subArray
 		//2. 引数１︓intの配列 array
@@ -97,14 +95,42 @@ public class JavaHomeWork06 {
 		//4. 引数３︓⻑さlength
 		//5. 戻り値︓intの配列
 		//6. 処理内容︓startIndexからstartIndex + lengthまでサブ配列を取得する
-		//以下メソッドの実施例:
-
-
-
-
-
-
-
+//		int[] megerArray(int[] left, int[] right) {
+//		int[] megerArray1 = new int[left.length + right.length];
+//		int index = 0;
+//		// mege 処理
+//		// mege left
+//		//
+//
+//		for (int l : left) {
+//			megerArray1[index] = l;
+//			index++;
+//
+//		}
+//		for (int r : right) {
+//			boolean flg = false;
+//
+//			for (int m : left) {
+//				if (r == m) {
+//					flg = true;
+//
+//					break;
+//				}
+//			}
+//			if (!flg) {
+//				megerArray1[index] = r;
+//				index++;
+//			}
+//		}
+//
+//		// 配列再定義
+//		int[] reArray = new int[index];
+//		for (int x = 0; x < reArray.length; x++) {
+//			reArray[x] = megerArray1[x];
+//		}
+//
+//		return reArray;
+//	}
 
 
 		//質問７︓以下静的なメソッドを定義してください。
@@ -113,13 +139,19 @@ public class JavaHomeWork06 {
 		//3. 戻り値︓charの配列
 		//4. 処理内容︓引数１のcharの配列先頭と末尾の空⽩⽂字列を削除してください。
 		//以下メソッドの実施例:
-
-
-
-
-
-
-
+//		static char[] trim(char[] ip) {
+//			// char[] input = new char[] { ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
+//			// String s = new String(input);
+//			// s = s.trim();
+//			// char[] charArray = s.toCharArray();
+//			// return charArray;
+//			String str = "";
+//			for (char c : ip) {
+//				str += c;
+//				// str = str+c;
+//			}
+//			System.out.println(str);
+//			return str.trim().toCharArray();
 
 
 		//質問８︓バブルソート⽤メソッドを作成してください。
@@ -127,7 +159,7 @@ public class JavaHomeWork06 {
 		//2. 引数１︓intの配列
 		//3. 戻り値︓ソート済みの配列
 		//4. 処理内容︓bubbleSortアルゴリズムを用い、入力した引数の配列をソートしてください。
-		static int[] bubbleSort(int[] arr) {
+		int[] bubbleSort (int[] arr) {
 			for (int i = 0; i < arr.length - 1; i++) {
 				for (int j = 0; j < arr.length - 1 - i; j++) {
 					if (arr[j] > arr[j + 1]) {
@@ -137,21 +169,15 @@ public class JavaHomeWork06 {
 					}
 				}
 			}
-			return arr;
+			return;
 		}
-		
-		
+
+
 		//質問９︓メソッドの呼び出す練習。
 		//1. 質問６-１を用い、２つ配列をマージします。
 		//2. 質問８を用い、ステップ１のマージした配列をソートする。
 		//3. 注意:コードを１行にしてください。
-
-
-
-
-
-
-
+//		System.out.println(Arrays.toString(bubbleSort(megerArray(left, right))));
 
 
 	}
