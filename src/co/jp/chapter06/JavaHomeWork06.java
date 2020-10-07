@@ -1,6 +1,5 @@
 package co.jp.chapter06;
 
-import java.util.Arrays;
 
 public class JavaHomeWork06 {
 
@@ -159,18 +158,18 @@ public class JavaHomeWork06 {
 		//2. 引数１︓intの配列
 		//3. 戻り値︓ソート済みの配列
 		//4. 処理内容︓bubbleSortアルゴリズムを用い、入力した引数の配列をソートしてください。
-		int[] bubbleSort (int[] arr) {
-			for (int i = 0; i < arr.length - 1; i++) {
-				for (int j = 0; j < arr.length - 1 - i; j++) {
-					if (arr[j] > arr[j + 1]) {
-						int temp = arr[j];
-						arr[j] = arr[j + 1];
-						arr[j + 1] = temp;
-					}
-				}
-			}
-			return;
-		}
+//		int[] bubbleSort (int[] arr) {
+//			for (int i = 0; i < arr.length - 1; i++) {
+//				for (int j = 0; j < arr.length - 1 - i; j++) {
+//					if (arr[j] > arr[j + 1]) {
+//						int temp = arr[j];
+//						arr[j] = arr[j + 1];
+//						arr[j + 1] = temp;
+//					}
+//				}
+//			}
+//			return;
+//		}
 
 
 		//質問９︓メソッドの呼び出す練習。
