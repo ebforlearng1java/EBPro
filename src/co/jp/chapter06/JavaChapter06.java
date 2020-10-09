@@ -52,4 +52,16 @@ public class JavaChapter06 {
 			return result;
 
 		}
+
+		public class Cat{
+			public void eat_01(String x) {
+				System.out.println("EAT_01");
+			}
+			public void eat_01(int x) {
+				System.out.println("EAT_02");
+			}
+			public void eat_01(boolean x) {
+				System.out.println("EAT_03");
+			}
+		}
 }

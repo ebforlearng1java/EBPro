@@ -17,7 +17,21 @@ public class JavaHomeWork06 {
 		String[] array_01 = null;
 		fillArray_01(array_01);
 		System.out.println(array_01 == null);
+		Object[] array_02 = {1, 2, 3};
+		OBJ_06.printArray(array_02);
+		int[] left = new int[] {1, 2, 3, 4};
+		int[] right = new int[] {5, 6, 7, 8};
+		OBJ_06.megerArray(left, right);
+		System.out.println();
+		OBJ_06.subArray(left, 1, 2);
 
+		System.out.println();
+		char[] array03 = new char[] {' ', ' ', 'A','b',' ',' ','C',' ',' '};
+		OBJ_06.trim(array03);
+
+		System.out.println();
+		int[] array04 = new int[] {1,3,6,10,5,20,15,33,55,50};
+		OBJ_06.bubbleSort(array04);
 	}
 
 	// 質問:以下関数（メソッド）の返却型は?
@@ -63,4 +77,127 @@ public class JavaHomeWork06 {
 	public static void fillArray_01(String[] array) {
 		array = new String[] {"1", "2"};
 	}
+
+	// 質問６-０︓配列は直接に印刷できません。下記メソッドを利用して、配列をprintします。以下メソッドを呼び出してください。
+	public static void printArray(Object[] objs) {
+		if (objs == null) {
+			System.out.println("null");
+			return;
+		}
+		String prefix = "";
+		StringBuilder sb = new StringBuilder();
+		sb.append("[");
+		for (Object obj:objs) {
+			sb.append(prefix);
+			sb.append(String.valueOf(obj));
+			prefix = ". ";
+		}
+		sb.append("]");
+		System.out.println(sb.toString());
+	}
+
+	// 質問６-１︓以下静的なメソッドを定義してください。
+	// 1. メソッド名: megerArray
+	// 2. 引数１︓intの配列 left
+	// 3. 引数２︓intの配列 right
+	// 4. 戻り値︓intの配列
+	// 5. 処理内容︓引数left と 引数right をマージして、新しい配列を作成して返却する。
+	public static int[] megerArray(int[] left, int[] right) {
+		int length = left.length + right.length;
+		int[] arr03 = new int[length];
+		int length_temp = 0;
+		for (int i = 0;i < left.length; i++) {
+			arr03[length_temp] = left[i];
+			length_temp++;
+		}
+		for (int i = 0; i<right.length; i++) {
+			arr03[length_temp] = right[i];
+			length_temp++;
+		}
+		for (int i = 0; i <arr03.length;i++)  {
+			System.out.print(arr03[i] + " ");
+		}
+		return arr03;
+	}
+
+
+
+	// 質問６-２︓以下静的なメソッドを定義してください。
+	// 1. メソッド名: subArray
+	// 2. 引数１︓intの配列 array
+	// 3. 引数２︓開始のstartIndex
+	// 4. 引数３︓長さlength
+	// 5. 戻り値︓intの配列
+	// 6. 処理内容︓startIndexからstartIndex + lengthまでサブ配列を取得する
+	public static int[] subArray(int[] array, int startIndex, int length) {
+		for (int i = 0; i<array.length;i++) {
+			if(array[i] == startIndex ) {
+				for (int j = 0;j <length; j++) {
+					System.out.print(array[i+1] +" ") ;
+					i++;
+				}
+			}
+		}
+		return array;
+	}
+
+	// 質問７︓以下静的なメソッドを定義してください。
+	// 1. メソッド名︓trim
+	// 2. 引数１︓charの配列
+	// 3. 戻り値︓charの配列
+	// 4. 処理内容︓引数１のcharの配列先頭と末尾の空白文字列を削除してください。
+	public static char[] trim(char[] char01) {
+		int startIndex = 0;
+		int endIndex = 0;
+		for (int i = 0; i < char01.length;i++) {
+			if(char01[i] != ' ') {
+				startIndex = i;
+				break;
+			}
+
+		}
+		for (int j = char01.length-1; j > 0;j--) {
+			if(char01[j] != ' ') {
+				endIndex = j;
+				break;
+			}
+
+		}
+		int length = endIndex-startIndex +1;
+		char[] char02 = new char[length];
+ 		for (int k = 0;k< char02.length;k++) {
+ 			char02[k] = char01[startIndex];
+ 			startIndex++;
+ 			System.out.print(char02[k] + ",");
+		}
+		return char01;
+	}
+
+	// 質問８︓バブルソート用メソッドを作成してください。
+	// 1. メソッド名︓bubbleSort
+	// 2. 引数１︓intの配列
+	// 3. 戻り値︓ソート済みの配列
+	// 4. 処理内容︓bubbleSortアルゴリズムを用い、入力した引数の配列をソートしてください。
+	public static int[] bubbleSort(int[] arr) {
+		for(int i = 0;i < arr.length-1; i++) {
+			for(int j = 0; j< arr.length-i-1;j++) {
+				if(arr[j] > arr[j+1]) {
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+		for (int k = 0;k< arr.length;k++) {
+ 			System.out.print(arr[k] + ",");
+		}
+		return arr;
+	}
+
 }
+
+
+
+
+
+
