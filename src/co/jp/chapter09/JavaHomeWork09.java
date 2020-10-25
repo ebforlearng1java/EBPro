@@ -6,11 +6,10 @@ public class JavaHomeWork09 {
 
 
  		//質問１：
-// 		btn.addActionListener((ActionEvent e) -> {
-// 			System.out.println("ボタンクリックしました。");
-// 			});
-//答：上記のところにラムダ式を使う
-// 	   btnを押すと、addActionListenerを呼び出し、ActionEvent型の引数eを出すと、"ボタンクリックしました"を出力
+//	btn.addActionListener((ActionEvent e) -> {   ⇒ラダム式：addActionListenerってメソッドを実装する、
+// 		                                                     引数はActionEvent型のe
+//	System.out.println("ボタンクリックしました。");
+//	});
 
 
  		//質問２：
