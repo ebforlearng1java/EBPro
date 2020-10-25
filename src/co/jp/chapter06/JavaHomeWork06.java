@@ -72,45 +72,37 @@ public class JavaHomeWork06 {
 
 
 		//質問７：
-		//char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
-		//char[] output = trim(input);
-		//System.out.println("Question07：");
-		//printArrayChar(output);
+//		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
+// 		char[] a07 = trim(input);
+// 		for (int i = 0; i < a07.length; i++) {
+// 			System.out.print(a07[i]);
+// 			if (i < a07.length - 1) {
+// 				System.out.print(",");
+// 				}
+// 			}
+//		System.out.println();
 
 
-		//質問８：
-		//int[] a = new int[] {2,1,34,52,36,34,6,15,67,100,456};
-		 		//System.out.println("Question08：");
-		 		//printArrayInt(bubbleSort(a));
+//		質問８：
+//		public static int[] bubbleSort(int[] arr) {
+//		for(int i = 0;i < arr.length-1; i++) {
+//			for(int j = 0; j< arr.length-i-1;j++) {
+//				if(arr[j] > arr[j+1]) {
+//					int temp = arr[j];
+//					arr[j] = arr[j+1];
+//					arr[j+1] = temp;
+//					}
+//				}
+//		}
+//			for (int k = 0;k< arr.length;k++) {
+//			System.out.print(arr[k] + ",");
+//			}
+//		return arr;
+
 
 		//質問９：
-//		int[] a = {1,2,3,4};
-//		int[] b = {5,6,7,8};
-//		int[] c = new int[a.length + b.length];
-//
-//		System.out.print("arrayAは:");
-//		for (int i = 0; i < a.length; i++) {
-//			System.out.print(a[i] + "");
-//		}
-//		System.out.println();
-//		System.out.print("arrayBは: ");
-//		for (int i = 0; i < b.length; i++) {
-//			System.out.print(b[i] + "");
-//		}
-//		System.out.println();
-//		for (int i = 0; i < a.length; i++) {
-//			c[i] = a[i];
-//		}
-//		int n = 0;
-//		for(int i = a.length; i < c.length; i++) {
-//			c[i] = b[n];
-//			n++;
-//		}
-//		System.out.print("arrayC: (arrayA+arrayB with asc);");
-//		Arrays.sort(c);
-//		for (int i = 0; i < c.length; i++) {
-//			System.out.print(c[i] + "");
-//		}
+// 		int[] result = bubbleSort(megerArray(left, right));
 
-}
+ 	}
+
 }

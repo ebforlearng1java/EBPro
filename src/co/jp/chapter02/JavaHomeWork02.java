@@ -14,20 +14,24 @@ public class JavaHomeWork02 {
 
 
 //質問３：Float値⇒String文字列変更する場合、どうなメソッドを利用しますか
-//1.String.valueOf(‟1.0F‟)
+//1.String.valueOf(1.0F)
+		float num = 1.0F;
+ 		String str = String.valueOf(num);
+ 		System.out.println(str);
+ 		System.out.println(String.valueOf("1.0F"));
 
 
 //質問４：以下式の値を記載してください
 //1. 1.0+2.0=3.0
 //2. 1.0+‟2.0‟の場合に：
-		System.out.println(1.0 + 2.0);
-		System.out.println(1.0 + "2.0");
+//		System.out.println(1.0 + 2.0);
+//		System.out.println(1.0 + "2.0");
 //1.0+‟2.0‟=1.02.0
 
 
 //質問５：以下ステートメントの出力を記載してください
-		int a = 10;
-		System.out.println("a");
+//		int a = 10;
+//		System.out.println("a");
 //出力はaです
 
 	}

@@ -103,35 +103,44 @@ public class JavaHomeWork05 {
 
 
 //質問７：
-//		int[] array01 = {100,56,3,23,12};
-//		int[] array02 = array01.clone();
-//		Arrays.parallelSort(array01);
-//		for (int i = 0;i < array01.length; i++) {
-//			System.out.println(i + "位sort前:" + array02[i] + "sort後:" + array01[i]);
-//		}
+//		int[] array7 = new int[] { 100,56,3,23,12,56 };
+// 		for (int i = 0; i < array7.length - 1; i++) {
+// 			for (int j = 0; j < array7.length - 1 - i; j++) {
+// 				if (array7[j] > array7[j + 1]) {
+// 					int temp = array7[j];
+// 					array7[j] = array7[j + 1];
+// 					array7[j + 1] = temp;
+// 				}
+// 			}
+// 		}
+//
+// 		System.out.print("質問７:配列の昇順：");
+// 		for (int i = 0; i < array7.length; i++) {
+// 			System.out.print(array7[i] + " ");
+// 		}
+// 		System.out.println();
 
 
 //質問８：
-//		for (int i = 0;i < 5;i++) {
-//			for (int j = 5;j > i;j-- ) {
-//				System.out.print("");
-//			}
+//		 int row = 10;
+//		 int a =0;
+//		 int b = 0;
+//		 for (int i10 = 0; i10 <=row; i10++) {
+//			 b = 1;
+//			 a = i10 + 1;
+//			 for (int j = row - i10; j > 0; j--) {
+//				 System.out.print(" ");
+//				 }
+//			 for (int c = 0; c <= i10; c++) {
+//				 if (c > 0) {
+//					 b = b * (a - c) / c;
+//					 }
+//				 System.out.print(b + " ");
+//				 }
+//			 System.out.println();
+//			 }
 //
-//			for (int j = 0;j < i;j++) {
-//				System.out.print("*");
-//			}
-//
-//			for (int j = 1;j < i;j++) {
-//				System.out.print("*");
-//			}
-//
-//			System.out.println();
-//		}
-//	}
-
-
-
-
+	}
 
 }
 

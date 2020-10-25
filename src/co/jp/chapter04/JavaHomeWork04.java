@@ -57,23 +57,41 @@ public class JavaHomeWork04 {
 
 
 //質問６：
-//		int[] array_03 = new int [4];
-//		System.out.println(array_03[0]+array_03[1]+array_03[2]+array_03[3]);
-//答：SUMの値は０です
+//		int sum = 0;
+//		for (int item : Array_01) {
+//			sum = sum + item;
+//			}
+//		System.out.println("Array_01のSUM値は" + sum);
+//答：SUMの値は1０です
 
 
 //質問７：
-//		int[][] array = {
-//				{1,2,3,4},
-//				{10,20,30,40,50,60},
-//				{1000,10000}
-//		};
-//		int sum = 0;
-//		for (int i=0; i<array.length; i++) {
-//			for(int s=0; s<array[i].length; s++) {
-//				sum += array[i][s];
-//			}
-//		}
+//		int[][] array_a = new int[][] {
+// 			{1,2},
+// 			{3,4}
+// 			};
+//
+// 		int[][] array_b = new int[][] {
+// 			{5,6},
+// 			{7,8}
+// 		    };
+// 		int[][] array_c = new int[2][2];
+// 		int[][] array_d = new int[2][2];
+//
+//
+// 		for (int i=0; i<array_a.length ; i++) {
+// 			for (int j=0; j<array_b[i].length ; j++) {
+// 				array_c[i][j]=array_a[i][j]+array_b[i][j];
+// 				System.out.print(array_c[i][j]+",");
+// 			}
+// 			System.out.println("");
+// 		}
+// 		for (int i=0; i<array_a.length ; i++) {
+// 			for (int j=0; j<array_b[i].length ; j++) {
+// 				array_d[i][j]=array_a[i][j]*array_b[i][j];
+// 				System.out.print(array_d[i][j]+",");
+// 			}
+//	}
 	}
 
 }
