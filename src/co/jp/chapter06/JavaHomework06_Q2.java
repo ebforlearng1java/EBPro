@@ -52,9 +52,9 @@ public class JavaHomework06_Q2 {
 
     public static int sum(int [] datas)
     {
-     int sum = datas[0];
+     int sum = 0;
      for (int i = 1; i < datas.length; i++) {
-     	sum = sum + datas[0];
+     	sum = sum + datas[i];
 
      	}
     	return sum;
