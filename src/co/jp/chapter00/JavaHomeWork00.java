@@ -10,6 +10,13 @@ public class JavaHomeWork00 {
 		// 質問２　今現場に使用しているIDE　（開発ツール）
 		// 開発言語向け
 		// DB向け
+
+
+
+		String x = "a";
+		String y = "a";
+		System.out.println(x == y); // true ? false? 原因は ?
+		System.out.println(x.equals(y)); // true ? false? 原因は ?
 	}
 
 }
