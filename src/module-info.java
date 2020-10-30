@@ -5,4 +5,5 @@ module EBPro {
 	exports co.jp.chapter01;
 	exports co.jp.chapter04;
 	exports co.jp.chapter03;
+	requires java.logging;
 }
