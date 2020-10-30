@@ -7,75 +7,60 @@ public class JavaHomeWork07 {
  		// TODO 自動生成されたメソッド・スタブ.
 
 
-        //Ｐ５の質問︓以下コードはコンバインエラー発生しますか？理由は？
-// 		package earth;
-// 		public class Human {
-// 		private String name;
-// 		protected int age = 10;
-// 		public String getName() {
-// 		return name;
-// 		}
-// 		}
-// 		// クラス２ Sample.java (ファイル異なる要注意)
-// 		package earth;
-// 		public class Sample {
-// 		public static void main(String...args) {
-// 		Human man = new Human();
-// 		System.out.println(man.name);// NG, nameはprivateの為、アクセス不可
-// 		System.out.println(man.age);// OK, ageはprotected、同じPackageのクラスアクセス可能
-// 		System.out.println(man.getName()); // OK, publicの為、いつでもどこでもアクセス可能
-// 		}
-// 		}
-//答：エラーは発生します。理由はローカル・クラスHumanの修飾子は私的修飾子ですから、正しくありません。
+//質問１
+// PetクラスでsetAgeメソッドがないので、コンパイルエラーが発生します。
 
 
- 		//Ｐ６の質問：
- //答：クラスＵＭＬを参考してください。
-
-
- 		//Ｐ７の質問：下記コードのＢｕｇを探します
- 	    //Human02.java
-// 		 		public class Human02 {
-// 		 		private String name;
-// 		 		}
-
- 		//Kicker.java
-// 		 		public class Kicker {
-// 		 		public static void main(String...args) {
-// 		 			Human02 obj = null;
-// 		 			System.out.println(obj.name); // Nullpointer：obj = null;
-// 		 			}
-// 		 			}
-//答：Humanのアクセス修飾子はprivateですから、クラスKickerから呼び出すことはできません。
-
-
- 		//Ｐ１５の質問２：
-//		メソッドsetAge()はまだ定義されない
-
-
- 		//Ｐ１６の質問１：
- 	    // Pet.java
-//    	public class Pet {
-//	    public String name;
+//質問２
+//		public class Math {
 //
-//	    public void setName(String value) {
-//	    this.name = value;
-//	 }
+//			public static void main(String[] args) {
+//				// TODO 自動生成されたメソッド・スタブ
+//				int[] input = new int[] {5,10,4,6,1,14};
+//				System.out.println(max(input));
+//				System.out.println(min(input));
+//				System.out.println(average(input));
+//			}
+//
+//			//配列のMAX値の取得処理
+//				public static int max(int[] input) {
+//					int max = 0;
+//					for (int i = 0; i < input.length; i++) {
+//						if (input[i] > max) {
+//							max = input[i];
+//						}
+//					}
+//					return max;
+//				}
+//
+//				//配列のMIN値の取得処理
+//				public static int min(int[] input) {
+//					int min = input[0];
+//					for (int i = 0; i < input.length; i++) {
+//						if (input[i] < min) {
+//							min = input[i];
+//						}
+//					}
+//					return min;
 //		}
- 		// Kicker.java
-// 		public class Kicker {
-//	    public static void main(String...args) {
-//        Pet cat = new Pet();
-//        cat.setAge(1234);
-//        }
-//	}
-//答え：メソッドsetAgeはＰｅｔで変数がありません。
+//				//配列の平均値の取得処理
+//						public static int average(int[] input) {
+//							int sum =0;
+//							for (int i = 0; i < input.length; i++) {
+//								sum += input[i];
+//								}
+//							int average = sum/input.length;
+//							return average;
+//							}
+//
+//				}
 
 
- 		//Ｐ１６の質問２：
-// 		クラスMathを参考してください
-//      クラスMatrixを参考してください
-
+//質問３：
+// Matrixクラスを呼び出し
+// 		int[][] data = {{1,2},{4,5}};
+// 		Matrix matrix = new Matrix(data);
+// 		matrix.add(matrix);
 
 
  	}
