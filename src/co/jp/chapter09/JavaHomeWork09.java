@@ -25,8 +25,12 @@ public class JavaHomeWork09 {
 //		 		window.setVisible(true);
 //	 		}
 //		}
-		//答え：btn.addActionListener((ActionEvent e) -> {　行で
-		//     実装するメソッドaddActionListenerのラムダ式を使っている。
+		//答え：btn.addActionListener((ActionEvent e) -> {
+        //			System.out.println("ボタンクリックしました。");
+        // 		});
+		//     でラムダ式を使っている。
+		//解釈： 実装するメソッドaddActionListener(ActionEvent e)を呼び出して、
+		//実装内容「ボタンクリックしました。」を出力します。
 
 		//質問２︓以下ソースに匿名クラスの利用する行は︖
 //		public class Kicker {

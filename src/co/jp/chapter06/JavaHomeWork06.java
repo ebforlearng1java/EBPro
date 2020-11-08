@@ -45,8 +45,8 @@ public class JavaHomeWork06 {
 		//質問９
 		int[] left2 = new int[] {9, 2, 12, 4};
 		int[] right2 = new int[] {4, 23, 1, 31};
-		int[] meger = megerArray(left2,right2);
-		meger=bubbleSort(meger);
+
+		int[] meger=bubbleSort(megerArray(left2,right2));
 		System.out.println("質問９の答え：");
 		printArrayInt(meger);
 	}
